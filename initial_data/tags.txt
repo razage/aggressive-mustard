@@ -1,0 +1,40 @@
+ElementTags
+  Blight
+  Cold
+  Flame
+  Holy
+  Light?
+  Nature
+  Shock
+
+Combat
+One Handed
+Weapon Attack
+Swift
+General
+Training
+Preparation
+Movement
+Special Attack
+Magic Attack
+Stance
+Style
+Scout
+Auto
+Melee Attack
+Hafted
+Two Handed
+Spear
+Shield
+Katana
+Blade
+Servant Summon
+Ranged Attack
+Dual Wield
+Harmony
+Spirit
+Instrument
+Fairy
+Mythic
+Whip
+Enchantment
