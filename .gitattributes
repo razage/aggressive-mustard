@@ -1,5 +1,7 @@
 * text=auto
 
+*.html eol=lf
 *.js eol=lf
+*.json eol=lf
 *.py eol=lf
 *.scss eol=lf

@@ -3,6 +3,7 @@
 
 # folders
 .idea/
+__pycache__/
 
 # specific files
 database.db
