@@ -1,0 +1,8 @@
+# file extensions
+*.pyc
+
+# folders
+.idea/
+
+# specific files
+database.db
