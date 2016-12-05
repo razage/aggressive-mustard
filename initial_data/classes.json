@@ -65,20 +65,15 @@
       "HP":50,
       "hp_mod":8
    },
-   "Kannagi":{
+   "Medium":{
       "altnames":{
          "North America":"Medicine Man",
-         "South/Central America":"Medium",
-         "Korea":"Medium",
-         "China":"Medium",
+         "Japan": "Kannagi",
          "Southeast Asia":"Dukun",
          "India":"Tantric",
          "Middle East":"Dervish",
          "Western Europe":"Exorcist",
-         "Scandinavia":"Medium",
-         "Russia":"Medium",
          "Africa":"Sangoma",
-         "Oceania":"Medium"
       },
       "STR":1,
       "DEX":3,
@@ -99,20 +94,15 @@
       "HP":55,
       "hp_mod":9
    },
-   "Samurai":{
+   "Pirate":{
       "altnames":{
-         "North America":"Pirate",
-         "South/Central America":"Pirate",
+         "Japan": "Samurai",
          "Korea":"Hwarang",
          "China":"Youxia",
-         "Southeast Asia":"Pirate",
-         "India":"Pirate",
          "Middle East":"Ghazi",
          "Western Europe":"Paladin",
          "Scandinavia":"Viking",
          "Russia":"Cossack",
-         "Africa":"Pirate",
-         "Oceania":"Pirate"
       },
       "STR":4,
       "DEX":2,
