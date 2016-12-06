@@ -73,7 +73,7 @@
          "India":"Tantric",
          "Middle East":"Dervish",
          "Western Europe":"Exorcist",
-         "Africa":"Sangoma",
+         "Africa":"Sangoma"
       },
       "STR":1,
       "DEX":3,
@@ -102,7 +102,7 @@
          "Middle East":"Ghazi",
          "Western Europe":"Paladin",
          "Scandinavia":"Viking",
-         "Russia":"Cossack",
+         "Russia":"Cossack"
       },
       "STR":4,
       "DEX":2,

@@ -10,28 +10,31 @@ from am.races.models import Race
 db.create_all()
 db.session.commit()
 
-export = Path(join(app.config['BASEDIR'], "data.json"))
+exports = {
+    "classes": Path(join(app.config['BASEDIR'], "initial_data", "classes.json")),
+    "races": Path(join(app.config['BASEDIR'], "initial_data", "races.json")),
+    "servers": Path(join(app.config['BASEDIR'], "initial_data", "servers.json"))
+}
 
-if export.is_file():
-    data = load(open(str(export)))
+for f in exports.items():
+    if f[0] == "classes" and f[1].is_file():
+        classes = load(open(str(f[1])))
 
-    for i in data.items():
-        for c in i[1].items():
+        for c in classes.items():
             _stats = c[1]
+            _class = Class(c[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'], _stats['hp_mod'])
+            db.session.add(_class)
+            db.session.commit()
 
-            if i[0] == "classes":
-                _class = Class(c[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'],
-                               _stats['hp_mod'])
-                db.session.add(_class)
-                db.session.commit()
-
-                if "altnames" in _stats:
-                    for n in _stats['altnames'].items():
-                        _class.alternate_names.append(AlternateName(n[1], n[0]))
+            if "altnames" in _stats:
+                for n in _stats['altnames'].items():
+                    _class.alternate_names.append(AlternateName(n[1], n[0]))
                     db.session.commit()
+    elif f[0] == "races" and f[1].is_file():
+        races = load(open(str(f[1])))
 
-            elif i[0] == "races":
-                _race = Race(c[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'],
-                             _stats['fate'], _stats['bonus_points'])
-                db.session.add(_race)
-                db.session.commit()
+        for r in races.items():
+            _stats = r[1]
+            _race = Race(r[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'], _stats['fate'], _stats['bonus_points'])
+            db.session.add(_race)
+            db.session.commit()
