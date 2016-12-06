@@ -1,40 +1,51 @@
-ElementTags
+General
+Types
   Blight
   Cold
   Flame
   Holy
-  Light?
   Nature
   Shock
+  Stance
+  Style
+  Servant Summon
+  Harmony
+  Spirit
+  Fairy
+  Mythic
+  Enchantment
+  Training (this is more significant than the term "training". Kuden in the show were learned randomly and/or taught by other players that learned them.)
 
-Combat
-One Handed
-Weapon Attack
-Swift
-General
-Training
-Preparation
-Movement
-Special Attack
-Magic Attack
-Stance
-Style
-Scout
-Auto
-Melee Attack
-Hafted
-Two Handed
-Spear
-Shield
-Katana
-Blade
-Servant Summon
-Ranged Attack
-Dual Wield
-Harmony
-Spirit
-Instrument
-Fairy
-Mythic
-Whip
-Enchantment
+Equipment
+  One Handed
+  Two Handed
+  Dual Wield
+  Light (like light weapon)
+  Throwing
+  Instrument
+  Whip
+  Spear
+  Shield
+  Katana
+  Blade
+  Hafted
+
+Timing
+  Preparation
+  Auto
+  Combat
+
+Action
+  Weapon Attack
+  Special Attack
+  Magic Attack
+  Melee Attack
+  Ranged Attack
+  Scout
+  Movement
+  Swift
+
+Species
+  Kobold
+  Humanoid
+  Genius
