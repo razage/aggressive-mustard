@@ -9,7 +9,3 @@ SECRET_KEY = "not the real key"
 
 SQLALCHEMY_DATABASE_URI = "sqlite:///" + str(DB)
 SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-TAGCATEGORIES = (
-    "General"
-)
