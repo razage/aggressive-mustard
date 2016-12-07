@@ -1,4 +1,4 @@
-from am import app
+from am import db
 from am.models import BaseModel
 
 
