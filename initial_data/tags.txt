@@ -19,7 +19,6 @@ Types
 Equipment
   One Handed
   Two Handed
-  Dual Wield
   Light (like light weapon)
   Throwing
   Instrument
@@ -41,6 +40,7 @@ Action
   Magic Attack
   Melee Attack
   Ranged Attack
+  Dual Wield
   Scout
   Movement
   Swift
