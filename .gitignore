@@ -6,4 +6,5 @@
 __pycache__/
 
 # specific files
+initial_data/tags.txt
 database.db
