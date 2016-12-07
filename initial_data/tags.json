@@ -1,0 +1,262 @@
+{
+  "Accessory": {
+    "category": "Equipment Slot",
+    "description": ""
+  },
+  "Auto": {
+    "category": "Timing",
+    "description": ""
+  },
+  "Bag": {
+    "category": "Equipment Slot",
+    "description": ""
+  },
+  "Blade": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Blight": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Boots": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Bow": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Charm": {
+    "category": "",
+    "description": ""
+  },
+  "Cloak": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Cold": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Combat": {
+    "category": "Timing",
+    "description": ""
+  },
+  "Consumable": {
+    "category": "",
+    "description": ""
+  },
+  "Dual Wield": {
+    "category": "Action",
+    "description": ""
+  },
+  "Enchantment": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Fairy": {
+    "category": "Species",
+    "description": ""
+  },
+  "Flame": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Food": {
+    "category": "",
+    "description": ""
+  },
+  "Gem": {
+    "category": "",
+    "description": ""
+  },
+  "General": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Genius": {
+    "category": "Species",
+    "description": ""
+  },
+  "Gloves": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Hafted": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Harmony": {
+    "category": "",
+    "description": ""
+  },
+  "Heavy Armor": {
+    "category": "Armor Type",
+    "description": ""
+  },
+  "Helm": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Holy": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Humanoid": {
+    "category": "Species",
+    "description": ""
+  },
+  "Instrument": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Katana": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Kobold": {
+    "category": "Species",
+    "description": ""
+  },
+  "Light": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Light Armor": {
+    "category": "Armor Type",
+    "description": ""
+  },
+  "Magic Attack": {
+    "category": "Action",
+    "description": ""
+  },
+  "Magic Stone": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Martial Arts": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Medicine": {
+    "category": "",
+    "description": ""
+  },
+  "Medium Armor": {
+    "category": "Armor Type",
+    "description": ""
+  },
+  "Melee Attack": {
+    "category": "Action",
+    "description": ""
+  },
+  "Movement": {
+    "category": "Action",
+    "description": ""
+  },
+  "Mythic": {
+    "category": "",
+    "description": ""
+  },
+  "Nature": {
+    "category": "",
+    "description": ""
+  },
+  "One-Handed": {
+    "category": "Equipment Slot",
+    "description": ""
+  },
+  "Preparation": {
+    "category": "Timing",
+    "description": ""
+  },
+  "Ranged Attack": {
+    "category": "Action",
+    "description": ""
+  },
+  "Rare": {
+    "category": "Rarity",
+    "description": ""
+  },
+  "Scout": {
+    "category": "Action",
+    "description": ""
+  },
+  "Scroll": {
+    "category": "",
+    "description": ""
+  },
+  "Servant Summon": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Service": {
+    "category": "",
+    "description": ""
+  },
+  "Shield": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Shock": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Spear": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Special Attack": {
+    "category": "Action",
+    "description": ""
+  },
+  "Spirit": {
+    "category": "",
+    "description": ""
+  },
+  "Staff": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Stance": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Style": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Swift": {
+    "category": "Action",
+    "description": ""
+  },
+  "Throwing": {
+    "category": "Weapon Type",
+    "description": ""
+  },
+  "Toxin": {
+    "category": "",
+    "description": ""
+  },
+  "Training": {
+    "category": "Classification",
+    "description": ""
+  },
+  "Two-Handed": {
+    "category": "Equipment Slot",
+    "description": ""
+  },
+  "Valuable": {
+    "category": "Rarity",
+    "description": ""
+  },
+  "Weapon Attack": {
+    "category": "Action",
+    "description": ""
+  },
+  "Whip": {
+    "category": "Weapon Type",
+    "description": ""
+  }
+}
