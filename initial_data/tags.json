@@ -3,6 +3,10 @@
     "category": "Equipment Slot",
     "description": ""
   },
+  "Adventurer": {
+    "category": "Classification",
+    "description": ""
+  },
   "Auto": {
     "category": "Timing",
     "description": ""
@@ -28,11 +32,15 @@
     "description": ""
   },
   "Charm": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "Cloak": {
     "category": "Classification",
+    "description": ""
+  },
+  "Clockwork": {
+    "category": "Species",
     "description": ""
   },
   "Cold": {
@@ -43,8 +51,12 @@
     "category": "Timing",
     "description": ""
   },
+  "Construct": {
+    "category": "Species",
+    "description": ""
+  },
   "Consumable": {
-    "category": "",
+    "category": "Classification",
     "description": ""
   },
   "Dual Wield": {
@@ -52,7 +64,7 @@
     "description": ""
   },
   "Enchantment": {
-    "category": "Classification",
+    "category": "Skill Type",
     "description": ""
   },
   "Fairy": {
@@ -64,11 +76,11 @@
     "description": ""
   },
   "Food": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "Gem": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "General": {
@@ -79,8 +91,16 @@
     "category": "Species",
     "description": ""
   },
+  "Gimmick": {
+    "category": "",
+    "description": ""
+  },
   "Gloves": {
     "category": "Classification",
+    "description": ""
+  },
+  "Goblin": {
+    "category": "Species",
     "description": ""
   },
   "Hafted": {
@@ -88,7 +108,7 @@
     "description": ""
   },
   "Harmony": {
-    "category": "",
+    "category": "Skill Type",
     "description": ""
   },
   "Heavy Armor": {
@@ -103,7 +123,15 @@
     "category": "Elements",
     "description": ""
   },
+  "Human": {
+    "category": "Species",
+    "description": ""
+  },
   "Humanoid": {
+    "category": "Species",
+    "description": ""
+  },
+  "Inorganic": {
     "category": "Species",
     "description": ""
   },
@@ -135,12 +163,20 @@
     "category": "Classification",
     "description": ""
   },
+  "Magical": {
+    "category": "",
+    "description": ""
+  },
   "Martial Arts": {
     "category": "Weapon Type",
     "description": ""
   },
+  "Mechanical": {
+    "category": "Species",
+    "description": ""
+  },
   "Medicine": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "Medium Armor": {
@@ -151,20 +187,32 @@
     "category": "Action",
     "description": ""
   },
+  "Mob": {
+    "category": "Classification",
+    "description": ""
+  },
   "Movement": {
     "category": "Action",
     "description": ""
   },
   "Mythic": {
-    "category": "",
+    "category": "Classification",
     "description": ""
   },
   "Nature": {
+    "category": "Elements",
+    "description": ""
+  },
+  "Night Vision": {
     "category": "",
     "description": ""
   },
   "One-Handed": {
     "category": "Equipment Slot",
+    "description": ""
+  },
+  "Plant": {
+    "category": "Species",
     "description": ""
   },
   "Preparation": {
@@ -184,11 +232,11 @@
     "description": ""
   },
   "Scroll": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "Servant Summon": {
-    "category": "Classification",
+    "category": "Skill Type",
     "description": ""
   },
   "Service": {
@@ -220,11 +268,11 @@
     "description": ""
   },
   "Stance": {
-    "category": "Classification",
+    "category": "Skill Type",
     "description": ""
   },
   "Style": {
-    "category": "Classification",
+    "category": "Skill Type",
     "description": ""
   },
   "Swift": {
@@ -236,15 +284,19 @@
     "description": ""
   },
   "Toxin": {
-    "category": "",
+    "category": "Item Type",
     "description": ""
   },
   "Training": {
-    "category": "Classification",
+    "category": "Skill Type",
     "description": ""
   },
   "Two-Handed": {
     "category": "Equipment Slot",
+    "description": ""
+  },
+  "Undead": {
+    "category": "Species",
     "description": ""
   },
   "Valuable": {
