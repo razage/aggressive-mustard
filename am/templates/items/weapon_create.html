@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <form role="form" method="post" action="{{ url_for('items.create_weapon') }}">
+        {{ form.csrf_token }}
+        <p>{{ form.name.label }}: {{ form.name }}</p>
+        <p>{{ form.rank.label }}: {{ form.rank }}</p>
+        <p>{{ form.weapon_slot.label }}: {{ form.weapon_slot }}</p>
+        <p>{{ form.weapon_type.label }}: {{ form.weapon_type }}</p>
+        <p>{{ form.attack.label }}: {{ form.attack }}</p>
+        <p>{{ form.magic.label }}: {{ form.magic }}</p>
+        <p>{{ form.accuracy.label }}: {{ form.accuracy }}</p>
+        <p>{{ form.initiative.label }}: {{ form.initiative }}</p>
+        <p>{{ form.range.label }}: {{ form.range }}</p>
+        <p>{{ form.price.label }}: {{ form.price }}</p>
+        <p>{{ form.description.label }}: {{ form.description }}</p>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
