@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms.fields import IntegerField, SelectField, StringField, TextAreaField
 from wtforms.validators import DataRequired, Length, Optional
 
-ranges = [("na", "N/a"), ("close", "Close"), ("1 sq.", "1 Sq."), ("2 sq.", "2 Sq."), ("3 sq.", "3 Sq.")]
+ranges = [("N/a", "N/a"), ("Close", "Close"), ("1 Sq.", "1 Sq."), ("2 Sq.", "2 Sq."), ("3 Sq.", "3 Sq.")]
 
 
 class WeaponForm(FlaskForm):

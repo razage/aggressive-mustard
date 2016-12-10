@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <table class="statblock" width="75%" border="1">
+        <thead>
+            <tr>
+                <td colspan="5">{{ weapon.name }}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="20%">{{ weapon.equipment_slot.name }}</td>
+                <td width="20%">{{ weapon.weapon_type.name }}</td>
+                <td width="20%">-</td>
+                <td width="20%">-</td>
+                <td width="20%">-</td>
+            </tr>
+            <tr>
+                <td class="table-description" colspan="5">
+                    [Attack Power {{ weapon.attack }} / Magic Power {{ weapon.magic }} / Accuracy {{ weapon.accuracy }} / Initiative {{ weapon.initiative }} / Range {{ weapon.range }}]
+                    {{ weapon.description }}
+                </td>
+            </tr>
+            <tr>
+                <td class="table-fieldname" width="20%">Rank</td>
+                <td width="20%">{{ weapon.rank }}</td>
+                <td class="table-fieldname" colspan="2" width="40%">Cost</td>
+                <td width="20%">{{ weapon.price }}G</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

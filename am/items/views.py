@@ -8,6 +8,12 @@ from am.tags.models import Tag
 mod = Blueprint("items", __name__, url_prefix="/items")
 
 
+@mod.route("/weapon/<int:weapon_id>")
+def view_weapon(weapon_id):
+    w = Weapon.query.get_or_404(weapon_id)
+    return render_template("items/weapon_view.html", title=w.name, weapon=w)
+
+
 @mod.route("/create/weapon", methods=["GET", "POST"])
 def create_weapon():
     form = WeaponForm()

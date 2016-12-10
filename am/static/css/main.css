@@ -7,3 +7,19 @@
 .content li {
     text-align: left;
 }
+
+table.statblock thead {
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+table.statblock tbody .table-fieldname {
+    background: #000000;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+table.statblock tbody .table-description {
+    text-align: left;
+}
