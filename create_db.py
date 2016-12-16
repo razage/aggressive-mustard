@@ -5,6 +5,7 @@ from pathlib import Path
 from am import app, db
 from am.models import Attributes, BaseModel
 from am.classes.models import AlternateName, Class
+from am.enemies.models import Enemy
 from am.items.models import Weapon
 from am.races.models import Race
 from am.tags.models import Tag
