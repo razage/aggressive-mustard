@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <table class="statblock" width="75%" border="1">
+        <thead>
+            <tr>
+                <td class="inverted centered" colspan="6">{{ enemy.name }}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="centered" width="17%">{{ enemy.enemy_type.name }}</td>
+                <td class="centered" width="17%">{% if enemy.tags[0] is defined %}{{ enemy.tags[0].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="16%">{% if enemy.tags[1] is defined %}{{ enemy.tags[1].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="16%">{% if enemy.tags[2] is defined %}{{ enemy.tags[2].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="17%">{% if enemy.tags[3] is defined %}{{ enemy.tags[3].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="17%">{% if enemy.tags[4] is defined %}{{ enemy.tags[4].name }} {% else %}-{% endif %}</td>
+            </tr>
+            <tr>
+                <td class="inverted">Rank</td>
+                <td>{{ enemy.rank }}</td>
+                <td class="inverted">STR</td>
+                <td>{{ enemy.STR }}</td>
+                <td class="inverted">Evasion</td>
+                <td>{{ enemy.evasion }}</td>
+            </tr>
+        <tr>
+            <td class="inverted">HP</td>
+            <td>{{ enemy.HP }}</td>
+            <td class="inverted">DEX</td>
+            <td>{{ enemy.DEX }}</td>
+            <td class="inverted">Resistance</td>
+            <td>{{ enemy.resistance }}</td>
+        </tr>
+        <tr>
+            <td class="inverted">Initiative</td>
+            <td>{{ enemy.initiative }}</td>
+            <td class="inverted">POW</td>
+            <td>{{ enemy.POW }}</td>
+            <td class="inverted">Phys Def</td>
+            <td>{{ enemy.phys_def }}</td>
+        </tr>
+        <tr>
+            <td class="inverted">Speed</td>
+            <td>{{ enemy.speed }} Sq.</td>
+            <td class="inverted">INT</td>
+            <td>{{ enemy.INT }}</td>
+            <td class="inverted">Magic Def</td>
+            <td>{{ enemy.mag_def }}</td>
+        </tr>
+        <tr>
+            <td class="inverted" colspan="2">Identification Difficulty</td>
+            <td>{% if enemy.id_diff == 0 %}Auto{% else %}{{ enemy.id_diff }}{% endif %}</td>
+            <td class="inverted" colspan="2">Hate Multiplier</td>
+            <td>x{{ enemy.hate_multi }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

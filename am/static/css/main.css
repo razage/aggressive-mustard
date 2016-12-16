@@ -1,25 +1,17 @@
 .content {
     width: 50%;
     margin: 0px auto;
-    text-align: center;
 }
 
 .content li {
     text-align: left;
 }
 
-table.statblock thead {
-    background: #000000;
-    color: #FFFFFF;
+.centered {
     text-align: center;
 }
 
-table.statblock tbody .table-fieldname {
+.inverted {
     background: #000000;
     color: #FFFFFF;
-    text-align: left;
-}
-
-table.statblock tbody .table-description {
-    text-align: left;
 }
