@@ -275,6 +275,10 @@
     "category": "Skill Type",
     "description": ""
   },
+  "Standard": {
+    "category": "Enemy Type",
+    "description": ""
+  },
   "Style": {
     "category": "Skill Type",
     "description": ""
