@@ -8,7 +8,7 @@
     "description": ""
   },
   "Auto": {
-    "category": "Timing",
+    "category": "Classification",
     "description": ""
   },
   "Bag": {
@@ -25,6 +25,10 @@
   },
   "Boots": {
     "category": "Classification",
+    "description": ""
+  },
+  "Boss": {
+    "category": "Enemy Type",
     "description": ""
   },
   "Bow": {
@@ -188,7 +192,7 @@
     "description": ""
   },
   "Mob": {
-    "category": "Classification",
+    "category": "Enemy Type",
     "description": ""
   },
   "Movement": {
@@ -196,7 +200,7 @@
     "description": ""
   },
   "Mythic": {
-    "category": "Classification",
+    "category": "Species",
     "description": ""
   },
   "Nature": {
