@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-    <form role="form" method="post" action="{{ url_for('items.create_weapon') }}">
+    <form role="form" method="post" action="{{ url_for('enemies.create_enemy') }}">
         {{ form.csrf_token }}
         <p>{{ form.name.label }}: {{ form.name }}</p>
+        <p>{{ form.tags.label }}: {{ form.tags }}</p>
         <p>{{ form.e_type.label }}: {{ form.e_type }}</p>
+        <p>{{ form.rank.label }}: {{ form.rank }}</p>
         <p>{{ form.strength.label }}: {{ form.strength }}</p>
         <p>{{ form.dexterity.label }}: {{ form.dexterity }}</p>
         <p>{{ form.power.label }}: {{ form.power }}</p>
         <p>{{ form.intelligence.label }}: {{ form.intelligence }}</p>
-        <p>{{ form.rank.label }}: {{ form.rank }}</p>
+        <p>{{ form.health_points.label }}: {{ form.health_points }}</p>
         <p>{{ form.initiative.label }}: {{ form.initiative }}</p>
         <p>{{ form.speed.label }}: {{ form.speed }}</p>
         <p>{{ form.evasion.label }}: {{ form.evasion }}</p>
-        <p>{{ form.phys_def.label }}: {{ form.phys_def }}</p>
         <p>{{ form.resistance.label }}: {{ form.resistance }}</p>
+        <p>{{ form.phys_def.label }}: {{ form.phys_def }}</p>
         <p>{{ form.mag_def.label }}: {{ form.mag_def }}</p>
         <p>{{ form.id_diff.label }}: {{ form.id_diff }}</p>
         <p>{{ form.hate_multi.label }}: {{ form.hate_multi }}</p>
