@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <form method="post" action="{{ url_for('enemies.create_ability', enemy_id=enemy.id) }}">
+        {{ form.csrf_token }}
+        <p>{{ form.name.label }}: {{ form.name }}</p>
+        <p>{{ form.attack_type.label }}: {{ form.attack_type }}</p>
+        <p>{{ form.timing.label }}: {{ form.timing }}</p>
+        <p>{{ form.check.label }}: {{ form.check }}</p>
+        <p>{{ form.target.label }}: {{ form.target }}</p>
+        <p>{{ form.range.label }}: {{ form.range }}</p>
+        <p>{{ form.limit_times.label }} {{ form.limit_times }} {{ form.limit_tf.label }} {{ form.limit_tf }}</p>
+        <p>{{ form.description.label }}: {{ form.description }}</p>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

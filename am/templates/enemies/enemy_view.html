@@ -53,6 +53,16 @@
             <td class="inverted" colspan="2">Hate Multiplier</td>
             <td>x{{ enemy.hate_multi }}</td>
         </tr>
+        {% if enemy.abilities|length > 0 %}
+            {% for a in enemy.abilities %}
+                <tr>
+                    <td colspan="6">
+                        ({{ a.name }} / {% if a.attack_type is not none %}{{ a.attack_type.name }} / {% endif %}{{ a.timing }}{% if a.check is not none %} / {{ a.check }}{% endif %}) {{ a.description }}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endif %}
         </tbody>
     </table>
+    <a href="{{ url_for('enemies.create_ability', enemy_id=enemy.id) }}">Add an ability</a>
 {% endblock %}

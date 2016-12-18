@@ -188,7 +188,7 @@
     "description": ""
   },
   "Melee Attack": {
-    "category": "Action",
+    "category": "Attack Type",
     "description": ""
   },
   "Mob": {
@@ -196,7 +196,7 @@
     "description": ""
   },
   "Movement": {
-    "category": "Action",
+    "category": "Attack Type",
     "description": ""
   },
   "Mythic": {
@@ -224,7 +224,7 @@
     "description": ""
   },
   "Ranged Attack": {
-    "category": "Action",
+    "category": "Attack Type",
     "description": ""
   },
   "Rare": {
@@ -260,7 +260,7 @@
     "description": ""
   },
   "Special Attack": {
-    "category": "Action",
+    "category": "Attack Type",
     "description": ""
   },
   "Spirit": {
@@ -312,7 +312,7 @@
     "description": ""
   },
   "Weapon Attack": {
-    "category": "Action",
+    "category": "Attack Type",
     "description": ""
   },
   "Whip": {

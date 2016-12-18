@@ -1,8 +1,33 @@
 from am import db
 from am.models import Attributes, BaseModel
 
+enemy_ability = db.Table("enemy ability", db.Column("enemy_id", db.Integer, db.ForeignKey("enemies.id")),
+                         db.Column("ability_id", db.Integer, db.ForeignKey("abilities.id")))
 enemy_tags = db.Table("enemy tags", db.Column("enemy_id", db.Integer, db.ForeignKey("enemies.id")),
                       db.Column("tag_id", db.Integer, db.ForeignKey("tags.id")))
+
+
+class Ability(BaseModel):
+    __tablename__ = "abilities"
+    name = db.Column(db.String(32), unique=True)
+    attack_type_id = db.Column(db.Integer, db.ForeignKey("tags.id"), nullable=True)
+    timing = db.Column(db.String(32))
+    check = db.Column(db.String(42), nullable=True)
+    target = db.Column(db.String(32))
+    range = db.Column(db.String(32), nullable=True)
+    limit = db.Column(db.String(16), nullable=True)
+    description = db.Column(db.Text)
+
+    attack_type = db.relationship("Tag", backref="abilities_with_attack_type", foreign_keys=attack_type_id)
+
+    def __init__(self, name, timing, check, target, range, limit, description):
+        self.name = name
+        self.timing = timing
+        self.check = check
+        self.target = target
+        self.range = range
+        self.limit = limit
+        self.description = description
 
 
 class Enemy(BaseModel, Attributes):
@@ -22,6 +47,7 @@ class Enemy(BaseModel, Attributes):
 
     enemy_type = db.relationship("Tag", backref="enemies_of_type", foreign_keys=type_id)
     tags = db.relationship("Tag", secondary=enemy_tags)
+    abilities = db.relationship("Ability", secondary=enemy_ability)
 
     def __init__(self, name, STR, DEX, POW, INT, HP, rank, initiative, speed, evasion, phys_def, resistance, mag_def,
                  id_diff, hate_multi=2, fate_points=0):
