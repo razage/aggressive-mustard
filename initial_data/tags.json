@@ -7,12 +7,24 @@
     "category": "Classification",
     "description": ""
   },
+  "After Damage": {
+    "category": "Timing",
+    "description": ""
+  },
   "Auto": {
     "category": "Classification",
     "description": ""
   },
+  "Automatic": {
+    "category": "Timing",
+    "description": ""
+  },
   "Bag": {
     "category": "Equipment Slot",
+    "description": ""
+  },
+  "Before Damage": {
+    "category": "Timing",
     "description": ""
   },
   "Blade": {
@@ -37,6 +49,10 @@
   },
   "Charm": {
     "category": "Item Type",
+    "description": ""
+  },
+  "Cleanup": {
+    "category": "Timing",
     "description": ""
   },
   "Cloak": {
@@ -203,6 +219,10 @@
     "category": "Species",
     "description": ""
   },
+  "Natural": {
+    "category": "Species",
+    "description": ""
+  },
   "Nature": {
     "category": "Elements",
     "description": ""
@@ -231,6 +251,10 @@
     "category": "Rarity",
     "description": ""
   },
+  "Refer": {
+    "category": "Timing",
+    "description": ""
+  },
   "Scout": {
     "category": "Action",
     "description": ""
@@ -245,6 +269,10 @@
   },
   "Service": {
     "category": "",
+    "description": ""
+  },
+  "Setup": {
+    "category": "Timing",
     "description": ""
   },
   "Shield": {

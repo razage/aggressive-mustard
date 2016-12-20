@@ -30,6 +30,23 @@ class Ability(BaseModel):
         self.description = description
 
 
+class LootTable(BaseModel):
+    __tablename__ = "loot tables"
+    enemy_id = db.Column(db.Integer, db.ForeignKey("enemies.id"))
+    roll = db.Column(db.String(3), nullable=True)
+    item_id = db.Column(db.Integer, db.ForeignKey("items.id"), nullable=True)
+    quantity = db.Column(db.Integer, default=1)
+    gold = db.Column(db.Integer, default=0)
+
+    enemy = db.relationship("Enemy", backref="loot")
+    item = db.relationship("Item", backref="dropped_by")
+
+    def __init__(self, roll=None, quantity=1, gold=0):
+        self.roll = roll
+        self.quantity = quantity
+        self.gold = gold
+
+
 class Enemy(BaseModel, Attributes):
     __tablename__ = "enemies"
     name = db.Column(db.String(32), unique=True)

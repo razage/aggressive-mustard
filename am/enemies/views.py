@@ -8,6 +8,12 @@ from am.tags.models import Tag
 mod = Blueprint("enemies", __name__, url_prefix="/enemies")
 
 
+@mod.route("/")
+def enemy_index():
+    e = Enemy.query.all()
+    return render_template("enemies/enemy_index.html", title="Enemy List", enemies=e)
+
+
 @mod.route("/<int:enemy_id>")
 def view_enemy(enemy_id):
     e = Enemy.query.get_or_404(enemy_id)

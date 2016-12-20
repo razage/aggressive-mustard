@@ -56,12 +56,21 @@
         {% if enemy.abilities|length > 0 %}
             {% for a in enemy.abilities %}
                 <tr>
-                    <td colspan="6">
-                        ({{ a.name }} / {% if a.attack_type is not none %}{{ a.attack_type.name }} / {% endif %}{{ a.timing }}{% if a.check is not none %} / {{ a.check }}{% endif %}) {{ a.description }}
+                    <td colspan="6" style="padding-bottom: 10px;">
+                        <b>({{ a.name }} / {% if a.attack_type is not none %}[{{ a.attack_type.name }}] / {% endif %}{{ a.timing }}{% if a.check is not none %} / {{ a.check }}{% endif %}{% if a.target is not none %} / {{ a.target }}{% endif %}{% if a.range is not none %} / {{ a.range }}{% endif %}{% if a.limit is not none %} / {{ a.limit }}{% endif %})</b> {{ a.description }}<br />
                     </td>
                 </tr>
             {% endfor %}
         {% endif %}
+        <tr>
+            <td colspan="6" class="inverted centered">Drop Items</td>
+        </tr>
+        {% for loot in enemy.loot %}
+            <tr>
+                <td width="17%">-</td>
+                <td colspan="5">{% if loot.item.name is defined %}{{ loot.item.name }}{% else %}-{% endif %}</td>
+            </tr>
+        {% endfor %}
         </tbody>
     </table>
     <a href="{{ url_for('enemies.create_ability', enemy_id=enemy.id) }}">Add an ability</a>

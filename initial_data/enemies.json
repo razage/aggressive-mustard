@@ -111,6 +111,7 @@
       }
     }
   },
+  "Bambooshoot Boar": {},
   "Brier Weasel": {
     "type": "Standard",
     "tags": ["Mythic", "Night Vision"],
@@ -284,6 +285,10 @@
       }
     }
   },
+  "Crimson Maple": {},
+  "Cursed Knight": {},
+  "Diatryma": {},
+  "Disease Beast": {},
   "Flame Pillar": {
     "type": "Standard",
     "tags": ["Gimmick", "Magical", "Flame"],
@@ -427,6 +432,9 @@
       }
     }
   },
+  "Goblin Captain": {},
+  "Goblin Conjurer": {},
+  "Goblin Destructor": {},
   "Goblin Shaman": {
     "type": "Standard",
     "tags": ["Humanoid", "Goblin"],
@@ -478,6 +486,10 @@
       }
     }
   },
+  "Goblin Skater": {},
+  "Goblin Sniper": {},
+  "Goblin Totem": {},
+  "Gray Pudding": {},
   "Green Slime": {
     "type": "Mob",
     "tags": ["Construct"],
@@ -570,6 +582,8 @@
       }
     }
   },
+  "Hobgoblin Bareknuckle": {},
+  "Hydra": {},
   "Kobold": {
     "type": "Mob",
     "tags": ["Humanoid", "Kobold"],
@@ -672,6 +686,8 @@
       }
     }
   },
+  "Kobold Heavyarm": {},
+  "Kobold Hunter": {},
   "Kobold Leader": {
     "type": "Boss",
     "tags": ["Humanoid", "Kobold"],
@@ -743,6 +759,11 @@
       }
     }
   },
+  "Kobold Medic": {},
+  "Kobold Partizan": {},
+  "Kobold's Crane": {},
+  "Lizhi Boar": {},
+  "Matsutakonid": {},
   "Mizkun of Shadows": {
     "type": "Boss",
     "tags": ["Humanoid", "Genius", "Night Vision"],
@@ -824,6 +845,9 @@
       }
     }
   },
+  "Mutated Dragon Mole": {},
+  "Oobold": {},
+  "Oobold Dinsword": {},
   "Owlbear": {
     "type": "Standard",
     "tags": ["Mythic", "Night Vision"],
@@ -998,6 +1022,15 @@
       }
     }
   },
+  "Poison Giant": {},
+  "Raigou Ajari": {},
+  "Ratman Bonehead": {},
+  "Ratman Harvester": {},
+  "Ratman Hooligan": {},
+  "Ratman Meanness": {},
+  "Ratman Minion": {},
+  "Ratman Stringer": {},
+  "Ratman Swarm Caller": {},
   "Red Cap": {
     "type": "Mob",
     "tags": ["Fairy", "Flame"],
@@ -1087,7 +1120,7 @@
         "range": "3 Sq.",
         "limit": null,
         "description": "Deal [20+2D] physical damage, and the target takes [Pursuit: 5]. (Target: Pursuit): The [Pursuit] stack this attack triggered is not removed."
-      },
+      }
     }
   },
   "Salamander": {
@@ -1192,6 +1225,48 @@
       }
     }
   },
+  "Sewer Rat": {
+    "type": "Mob",
+    "tags": ["Nature", "Night Vision"],
+    "rank": 1,
+    "STR": 1,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 1,
+    "HP": 18,
+    "initiative": 3,
+    "speed": 2,
+    "evasion": "8 (Fixed)",
+    "phys_def": 6,
+    "resistance": "7 (Fixed)",
+    "mag_def": 4,
+    "id_diff": 5,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Filthy Fangs": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (12 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [20+2D] physical damage to the target. (Minor): The target takes [Decay: 5]"
+      },
+      "Raging Rat": {
+        "attack_type": "Movement",
+        "tags": null,
+        "timing": "Move",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "Use this skill when the [Hate Top] character is outside [Range: Close]. This enemy may make a [Safe Move] up to 3 Sq. (Fate 1): If you have reached your limit for this skill, you may pay this cost to use it again."
+      }
+    }
+  },
+  "Sislau of Pestilence": {},
   "Skeleton": {
     "type": "Mob",
     "tags": ["Undead", "Night Vision"],
@@ -1345,6 +1420,8 @@
       }
     }
   },
+  "White Forest Tiger": {},
+  "Wild Giant": {},
   "Zombie": {
     "type": "Mob",
     "tags": ["Undead", "Night Vision"],

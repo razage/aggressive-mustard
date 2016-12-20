@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <table border="1" width="75%">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        {% for e in enemies %}
+            <tr>
+                <td>{{ e.id }}</td>
+                <td><a href="{{ url_for('enemies.view_enemy', enemy_id=e.id) }}">{{ e.name }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

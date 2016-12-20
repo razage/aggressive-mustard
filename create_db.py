@@ -1,32 +1,45 @@
+from collections import OrderedDict
 from json import load
 from os.path import join
 from pathlib import Path
 
+from sqlalchemy.orm.exc import NoResultFound
+
 from am import app, db
-from am.models import Attributes, BaseModel
 from am.classes.models import AlternateName, Class
-from am.enemies.models import Enemy
-from am.items.models import Weapon
+from am.enemies.models import Ability, Enemy, LootTable
+from am.items.models import Item, Weapon
 from am.races.models import Race
 from am.tags.models import Tag
 
 db.create_all()
 db.session.commit()
 
-exports = {
-    "classes": Path(join(app.config['BASEDIR'], "initial_data", "classes.json")),
-    "races": Path(join(app.config['BASEDIR'], "initial_data", "races.json")),
-    "servers": Path(join(app.config['BASEDIR'], "initial_data", "servers.json")),
-    "tags": Path(join(app.config['BASEDIR'], "initial_data", "tags.json"))
-}
+exports = OrderedDict([
+    ("tags", Path(join(app.config['BASEDIR'], "initial_data", "tags.json"))),
+    ("classes", Path(join(app.config['BASEDIR'], "initial_data", "classes.json"))),
+    ("races", Path(join(app.config['BASEDIR'], "initial_data", "races.json"))),
+    ("servers", Path(join(app.config['BASEDIR'], "initial_data", "servers.json"))),
+    ("enemies", Path(join(app.config['BASEDIR'], "initial_data", "enemies.json")))
+])
 
 for f in exports.items():
-    if f[0] == "classes" and f[1].is_file():
-        classes = load(open(str(f[1])))
+    if f[0] == "tags" and f[1].is_file():
+        tags = load(open(str(f[1])), object_pairs_hook=OrderedDict)
+
+        for t in tags.items():
+            _data = t[1]
+            _tag = Tag(t[0], _data['category'], _data['description'])
+            db.session.add(_tag)
+        db.session.commit()
+
+    elif f[0] == "classes" and f[1].is_file():
+        classes = load(open(str(f[1])), object_pairs_hook=OrderedDict)
 
         for c in classes.items():
             _stats = c[1]
-            _class = Class(c[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'], _stats['hp_mod'])
+            _class = Class(c[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'],
+                           _stats['hp_mod'])
             db.session.add(_class)
             db.session.commit()
 
@@ -36,19 +49,46 @@ for f in exports.items():
                     db.session.commit()
 
     elif f[0] == "races" and f[1].is_file():
-        races = load(open(str(f[1])))
+        races = load(open(str(f[1])), object_pairs_hook=OrderedDict)
 
         for r in races.items():
             _stats = r[1]
-            _race = Race(r[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'], _stats['fate'], _stats['bonus_points'])
+            _race = Race(r[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'], _stats['fate'],
+                         _stats['bonus_points'])
             db.session.add(_race)
             db.session.commit()
 
-    elif f[0] == "tags" and f[1].is_file():
-        tags = load(open(str(f[1])))
+    elif f[0] == "enemies" and f[1].is_file():
+        enemies = load(open(str(f[1])), object_pairs_hook=OrderedDict)
 
-        for t in tags.items():
-            _data = t[1]
-            _tag = Tag(t[0], _data['category'], _data['description'])
-            db.session.add(_tag)
-            db.session.commit()
+        for e in enemies.items():
+            _stats = e[1]
+            if _stats:
+                enemy = Enemy(e[0], _stats['STR'], _stats['DEX'], _stats['POW'], _stats['INT'], _stats['HP'],
+                              _stats['rank'], _stats['initiative'], _stats['speed'], _stats['evasion'],
+                              _stats['phys_def'], _stats['resistance'], _stats['mag_def'], _stats['id_diff'],
+                              _stats['hate_multi'], _stats['fate_points'])
+
+                enemy.enemy_type = Tag.query.filter(Tag.name == _stats['type']).one()
+
+                if _stats['tags'] is not None:
+                    for tag in _stats['tags']:
+                        enemy.tags.append(Tag.query.filter(Tag.name == tag).one())
+
+                for ability in _stats['abilities'].items():
+                    _data = ability[1]
+                    try:
+                        a = db.session.query(Ability).filter(Ability.name == ability[0]).one()
+                    except NoResultFound:
+                        a = Ability(ability[0], _data['timing'], _data['check'], _data['target'], _data['range'],
+                                    _data['limit'], _data['description'])
+
+                        if _data['attack_type'] is not None:
+                            a.attack_type = Tag.query.filter(Tag.name == _data['attack_type']).one()
+
+                    enemy.abilities.append(a)
+
+                db.session.add(enemy)
+                db.session.commit()
+            else:
+                continue
