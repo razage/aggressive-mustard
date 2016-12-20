@@ -57,7 +57,7 @@
             {% for a in enemy.abilities %}
                 <tr>
                     <td colspan="6" style="padding-bottom: 10px;">
-                        <b>({{ a.name }} / {% if a.attack_type is not none %}[{{ a.attack_type.name }}] / {% endif %}{{ a.timing }}{% if a.check is not none %} / {{ a.check }}{% endif %}{% if a.target is not none %} / {{ a.target }}{% endif %}{% if a.range is not none %} / {{ a.range }}{% endif %}{% if a.limit is not none %} / {{ a.limit }}{% endif %})</b> {{ a.description }}<br />
+                        <b>({{ a.name }} / {% if a.attack_type is not none %}{% if "Attack" in a.attack_type.name %}[{{ a.attack_type.name }}]{% else %}{{ a.attack_type.name }}{% endif %} / {% endif %}{{ a.timing }}{% if a.check is not none %} / {{ a.check }}{% endif %}{% if a.target is not none %} / {{ a.target }}{% endif %}{% if a.range is not none %} / {{ a.range }}{% endif %}{% if a.limit is not none %} / {{ a.limit }}{% endif %})</b> {{ a.description }}<br />
                     </td>
                 </tr>
             {% endfor %}
