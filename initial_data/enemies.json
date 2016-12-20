@@ -1,5 +1,65 @@
 {
-  "Anti-Bug's Light": {},
+  "Anti-Bug's Light": {
+    "type": "Mob",
+    "tags": ["Mythic", "Night Vision"],
+    "rank": 3,
+    "STR": 3,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 2,
+    "HP": 30,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "10 (Fixed)",
+    "phys_def": 4,
+    "resistance": "11 (Fixed)",
+    "mag_def": 6,
+    "id_diff": 13,
+    "hate_multi": 1,
+    "fate_points": 0,
+    "abilities": {
+      "Floating": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy always has [Flying]."
+      },
+      "Lightdrinker": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Setup",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "The square this enemy is in acquires [Darkness]. This effect lasts until the end of the round."
+      },
+      "Bug's Charge": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (11 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [20+2D] physical damage. (Minor): Until the end of the current Main Process, treat this enemy's Hate Multiplier as x2."
+      },
+      "Sacrifice": {
+        "attack_type": "Before Damage",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "2 Sq.",
+        "limit": null,
+        "description": "Use this skill before an enemy other than this one would take HP Damage from an attack. This enemy takes the damage instead, and the target is unaffected by the attack. In addition, the character who made the attack takes 15 direct damage, and afterwards, this enemy becomes [Dead]."
+      }
+    }
+  },
   "Assassin Bee": {
     "type": "Standard",
     "tags": ["Nature"],
@@ -92,8 +152,138 @@
       }
     }
   },
-  "Burning Dead": {},
-  "Clockwork Dragonfly": {},
+  "Burning Dead": {
+    "type": "Boss",
+    "tags": ["Undead", "Night Vision"],
+    "rank": 2,
+    "STR": 1,
+    "DEX": 1,
+    "POW": 2,
+    "INT": 3,
+    "HP": 68,
+    "initiative": 2,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 5,
+    "resistance": "0+2D",
+    "mag_def": 8,
+    "id_diff": 5,
+    "hate_multi": 4,
+    "fate_points": 4,
+    "abilities": {
+      "Ethereal Body": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "When this enemy take [Cold] or [Spirit] damage, treat its defense as 0. This enemy is not affected by [Mechanical] or [Natural] Props unless it wants to be. Whenever this enemy makes a [Normal Move] it is always considered to be a [Safe Move]."
+      },
+      "Black Flames of Regret": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "When this enemy appears in a scene, two Skeleton Archers enemies may optionally appear with it. One Skeleton Archer and two Skeletons may be used instead. The enemies that appear because of this effect do not produce Drop Items."
+      },
+      "Renew Action": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Refer",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Round",
+        "description": "Use when this enemy becomes [Post-Action]. This enemy immediately becomes [Pre-Action], and its [Initiative] becomes 0 until the end of the round."
+      },
+      "Green Flames of Resentment": {
+        "attack_type": "Magic Attack",
+        "tags": ["Flame"],
+        "timing": "Major",
+        "check": "Opposed (3+3D vs Resistance)",
+        "target": "Single",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Deal [20+2D] magical damage. (Minor): Increase the damage by +5. (Fate 1): This skill can be used with [Target: Wide 1 (P)]."
+      },
+      "Red Flames of Lamentation": {
+        "attack_type": "After Damage",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Use this skill immediately after this enemy takes damage. The character who dealt the damage takes [Weakness (Flame): 10]. Treat this Weakness as a Bad Status."
+      },
+      "White Flames of Jealousy": {
+        "attack_type": "Cleanup",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Wide 4 (P)",
+        "range": "Close",
+        "limit": null,
+        "description": "This skill can only target characters who have Combat Statuses. The target takes [(# of Combat Status on the Target) x 3] points of direct damage."
+      }
+    }
+  },
+  "Clockwork Dragonfly": {
+    "type": "Standard",
+    "tags": ["Construct", "Inorganic", "Clockwork"],
+    "rank": 3,
+    "STR": 2,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 3,
+    "HP": 38,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 10,
+    "resistance": "1+2D",
+    "mag_def": 10,
+    "id_diff": 7,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Wings of Glass": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy can always become [Flying]. When this enemy takes [Flame] damage, it must immediately make a [Safe Move] of 3 Sq. Afterwards, it takes [Afflicted] and [Rigor]."
+      },
+      "Pulse Laser": {
+        "attack_type": "Ranged Attack",
+        "tags": ["Holy"],
+        "timing": "Major",
+        "check": "Opposed (4+3D vs Evasion)",
+        "target": "Single",
+        "range": "3 Sq.",
+        "limit": null,
+        "description": "Deal [37 + 2D] physical damage. (Self: Rigor): Increase the damage by +[this enemy's Current HP]. If this effect is triggered, at the end of the current Main Process, this enemy becomes [Incapacitated]."
+      },
+      "Limiter Release": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Damage Roll",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy gains a +10 bonus to damage rolls of [Ranged Attacks]."
+      }
+    }
+  },
   "Flame Pillar": {
     "type": "Standard",
     "tags": ["Gimmick", "Magical", "Flame"],
@@ -135,11 +325,251 @@
       }
     }
   },
-  "Giant Spider": {},
-  "Goblin": {},
-  "Goblin Shaman": {},
-  "Green Slime": {},
-  "Gregarious Asphyxmoss": {},
+  "Giant Spider": {
+    "type": "Standard",
+    "tags": ["Nature", "Night Vision"],
+    "rank": 3,
+    "STR": 3,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 2,
+    "HP": 74,
+    "initiative": 3,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 6,
+    "resistance": "1+2D",
+    "mag_def": 7,
+    "id_diff": 5,
+    "hate_multi": 1,
+    "fate_points": 0,
+    "abilities": {
+      "Many-Legged": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy is not affected by [Natural] Props unless it wants to be. In addition, this enemy cannot Dash."
+      },
+      "Spiderweb Bind": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (5+2D vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [19+2D] physical damage. (Minor): The target takes [Rigor]. This [Rigor] cannot be removed normally, instead it may only be removed when the target and this enemy are no longer in the same square."
+      },
+      "Curse of the Arachnid": {
+        "attack_type": "Refer",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "2 Sq.",
+        "limit": null,
+        "description": "Use when this enemy becomes [Incapacitated]. The character that made this enemy [Incapacitated] takes 15 direct damage."
+      }
+    }
+  },
+  "Goblin": {
+    "type": "Mob",
+    "tags": ["Humanoid", "Goblin"],
+    "rank": 3,
+    "STR": 2,
+    "DEX": 3,
+    "POW": 1,
+    "INT": 2,
+    "HP": 24,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "9 (Fixed)",
+    "phys_def": 10,
+    "resistance": "7 (Fixed)",
+    "mag_def": 4,
+    "id_diff": 0,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Goblin Rage (Gob Mob)": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "After Damage",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "Use this skill when this enemy takes [Spirit] damage. This enemy immediately uses Gob Mob. Increase the damage of Gob Mob by +5."
+      },
+      "Gob Mob": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (13 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [33+2D] physical damage. (Minor): The target takes [Pursuit: 5]."
+      },
+      "Line Breaker": {
+        "attack_type": "Movement",
+        "tags": null,
+        "timing": "Move",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy makes a [Safe Move] up to 2 Sq. (Minor): Increase the distance moved by +1 Sq."
+      }
+    }
+  },
+  "Goblin Shaman": {
+    "type": "Standard",
+    "tags": ["Humanoid", "Goblin"],
+    "rank": 3,
+    "STR": 2,
+    "DEX": 1,
+    "POW": 2,
+    "INT": 3,
+    "HP": 38,
+    "initiative": 3,
+    "speed": 2,
+    "evasion": "1+2D",
+    "phys_def": 6,
+    "resistance": "2+2D",
+    "mag_def": 7,
+    "id_diff": 3,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Goblin Rage (Gob Magic)": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "After Damage",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "Use this skill when this enemy takes [Spirit] damage. This enemy immediately uses Gob Magic. Increase the damage of Gob Magic by +5."
+      },
+      "Gob Magic": {
+        "attack_type": "Magic Attack",
+        "tags": ["Cold"],
+        "timing": "Major",
+        "check": "Opposed (3+3D vs Resistance)",
+        "target": "Area (P)",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Deal [30+2D] magical damage. (Result 17): The target takes [Dazed] and [Afflicted]."
+      },
+      "Arcana Subjugation": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Minor",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "During this Main Process, this enemy's [Magic Attacks] use [Target: Wide 1 (P)]."
+      }
+    }
+  },
+  "Green Slime": {
+    "type": "Mob",
+    "tags": ["Construct"],
+    "rank": 3,
+    "STR": 2,
+    "DEX": 3,
+    "POW": 1,
+    "INT": 2,
+    "HP": 26,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "9 (Fixed)",
+    "phys_def": 10,
+    "resistance": "7 (Fixed)",
+    "mag_def": 7,
+    "id_diff": 5,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Amorphous Body": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "Whenever this enemy takes [Cold] damage, it also takes [Afflicted] and [Dazed]. This enemy's [Normal Moves] are always [Safe Moves]."
+      },
+      "Corrosive Drops": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (13 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [35+2D] physical damage. (Success): The target takes a -4 penalty to [Physical Defense]. Treat this effect as a Bad Status. (Minor): The target takes [Rigor]."
+      },
+      "Suspicious Puddle": {
+        "attack_type": "Movement",
+        "tags": null,
+        "timing": "Move",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy becomes [Hidden], then makes a [Safe Move] up to 2 Sq. without losing [Hidden]. (Minor): Increase the distance moved by +1 Sq."
+      }
+    }
+  },
+  "Gregarious Asphyxmoss": {
+    "type": "Standard",
+    "tags": ["Gimmick", "Natural"],
+    "rank": 3,
+    "STR": 0,
+    "DEX": 0,
+    "POW": 2,
+    "INT": 3,
+    "HP": 19,
+    "initiative": 0,
+    "speed": 0,
+    "evasion": "7 (Fixed)",
+    "phys_def": 7,
+    "resistance": "8 (Fixed)",
+    "mag_def": 12,
+    "id_diff": 10,
+    "hate_multi": 0,
+    "fate_points": 0,
+    "abilities": {
+      "Unreasoning Operation": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy does not produce Hate Damage, and Hate Under defense bonuses do not apply to its attacks. If this enemy is targeted with Prop Disable and [Disable Difficulty: 10] is successfully beaten, it becomes [Incapacitated]. This enemy cannot make Move Actions."
+      },
+      "Poison Spore": {
+        "attack_type": "Magic Attack",
+        "tags": ["Blight"],
+        "timing": "Major",
+        "check": "Opposed (3+3D vs Resistance)",
+        "target": "Wide 2 (A)",
+        "range": "Close",
+        "limit": null,
+        "description": "This skill cannot target the Gregarious Asphyxmoss. Deal [30+2D] magical damage. (Result 16): The target takes [Decay: 6]."
+      }
+    }
+  },
   "Kobold": {
     "type": "Mob",
     "tags": ["Humanoid", "Kobold"],
@@ -242,9 +672,199 @@
       }
     }
   },
-  "Kobold Leader": {},
-  "Mizkun of Shadows": {},
-  "Owlbear": {},
+  "Kobold Leader": {
+    "type": "Boss",
+    "tags": ["Humanoid", "Kobold"],
+    "rank": 1,
+    "STR": 1,
+    "DEX": 1,
+    "POW": 2,
+    "INT": 1,
+    "HP": 76,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "1+2D",
+    "phys_def": 4,
+    "resistance": "2+2D",
+    "mag_def": 6,
+    "id_diff": 5,
+    "hate_multi": 4,
+    "fate_points": 4,
+    "abilities": {
+      "Kobold Tactics": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy is not affected by [Mechanical] Props unless it wants to be. In addition, whenever this enemy is in the same square as another character with the [Kobold] tag, it gains a +1 bonus to [Dodge Checks]."
+      },
+      "Kobold Platoon": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "When this enemy appears in a scene, two Kobold Caster enemies may optionally appear with it. One Kobold Caster and two Kobolds may be used instead. The enemies that appear because of this effect do not produce Drop Items."
+      },
+      "Renew Action": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Refer",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Round",
+        "description": "Use when this enemy becomes [Post-Action]. This enemy immediately becomes [Pre-Action], and its [Initiative] becomes 0 until the end of the round."
+      },
+      "Fierce Howling Magic Spear": {
+        "attack_type": "Special Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (4+2D vs Evasion)",
+        "target": "Single",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Deal [12+2D] physical damage (Minor): The target takes [Dazed]. (Fate 1): This skill may be used with [Target: Area (P)]."
+      },
+      "Howling Punishment": {
+        "attack_type": "Setup",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Use this skill on a character with [Hate Top]. The target takes [Pursuit: 5]."
+      }
+    }
+  },
+  "Mizkun of Shadows": {
+    "type": "Boss",
+    "tags": ["Humanoid", "Genius", "Night Vision"],
+    "rank": 3,
+    "STR": 3,
+    "DEX": 2,
+    "POW": 2,
+    "INT": 1,
+    "HP": 146,
+    "initiative": 3,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 14,
+    "resistance": "1+2D",
+    "mag_def": 7,
+    "id_diff": 13,
+    "hate_multi": 5,
+    "fate_points": 4,
+    "abilities": {
+      "Renew Action II": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Refer",
+        "check": null,
+        "target": "Single",
+        "range": "4 Sq.",
+        "limit": "1/Round",
+        "description": "Use this skill on a target who has just become [Post-Action]. The target immediately becomes [Pre-Action], and their [Initiative] becomes 0 until the end of the round."
+      },
+      "Hidden Mastermind": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "When this enemy appears in a scene, any two enemies that are CR3 or lower with the [Humanoid] or [Human] tags may optionally appear with it. One enemy and two [Mob] enemies with CR3 and the [Humanoid] or [Human] tags may be used instead. The enemies that appear because of this effect do not produce Drop Items."
+      },
+      "Genius Talisman": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "When this enemy appears in a scene, it appears [Hidden]. When this enemy makes [Normal Moves] or [Safe Moves], it does not lose [Hidden]. When this enemy takes [Blight] damage, it also takes [Staggered]."
+      },
+      "Silhouette Arms": {
+        "attack_type": "Special Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (5+2D vs Evasion)",
+        "target": "Single",
+        "range": "2 Sq.",
+        "limit": null,
+        "description": "This skill cannot be used unless this enemy is the only enemy in the scene. Deal [20+2D] physical damage. (Minor): Increase the damage by +5."
+      },
+      "Shadow Spinner": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": "Wide 1 (P)",
+        "range": null,
+        "limit": null,
+        "description": "(Self: Hidden): The target gains a +15 bonus to damage rolls. In addition, the target gains [Cancel (Magical Damage): 10]."
+      },
+      "Spreading Despair": {
+        "attack_type": "Cleanup",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Wide 1 (P)",
+        "range": null,
+        "limit": null,
+        "description": "The target takes 10 direct damage. The target's Hate increases by +2, and they remove 1 Combat Status (GM's Choice). (Fate 1): This enemy becomes [Hidden]."
+      }
+    }
+  },
+  "Owlbear": {
+    "type": "Standard",
+    "tags": ["Mythic", "Night Vision"],
+    "rank": 2,
+    "STR": 3,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 1,
+    "HP": 60,
+    "initiative": 4,
+    "speed": 2,
+    "evasion": "1+3D",
+    "phys_def": 3,
+    "resistance": "2+3D",
+    "mag_def": 5,
+    "id_diff": 7,
+    "hate_multi": 1,
+    "fate_points": 0,
+    "abilities": {
+      "Ursine Claw": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (5+2D vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [16+2D] physical damage. (Minor): The target takes [Rigor]. This [Rigor] cannot be removed normally, instead it may only be removed when the target and this enemy are no longer in the same square."
+      },
+      "Lord of the Forest": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Before Attack",
+        "check": null,
+        "target": "Single",
+        "range": "2 Sq.",
+        "limit": null,
+        "description": "Use before an enemy other than this one would take HP Damage from an attack. This enemy takes the damage instead, and the target is unaffected by the attack. In addition, the damage this enemy takes is reduced by -5."
+      }
+    }
+  },
   "Pixie": {
     "type": "Standard",
     "tags": ["Fairy", "Shock"],
@@ -296,9 +916,139 @@
       }
     }
   },
-  "Player Killer Samurai": {},
-  "Player Killer Swashbuckler": {},
-  "Red Cap": {},
+  "Player Killer Samurai": {
+    "type": "Standard",
+    "tags": ["Human", "Adventurer"],
+    "rank": 2,
+    "STR": 3,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 1,
+    "HP": 61,
+    "initiative": 2,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 8,
+    "resistance": "1+2D",
+    "mag_def": 4,
+    "id_diff": 7,
+    "hate_multi": 1,
+    "fate_points": 0,
+    "abilities": {
+      "Rage Strike": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (5+2D vs Evasion)",
+        "target": "Single",
+        "range": "Single",
+        "limit": null,
+        "description": "Deal [16+2D] physical damage. (Minor): Until the end of the current Main Process, treat this enemy's Hate Multiplier as x2."
+      },
+      "Izuna's Return": {
+        "attack_type": "After Damage",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "2 Sq.",
+        "limit": null,
+        "description": "Use this skill when an enemy other than this one makes an attack. The target of that attack takes 10 direct damage."
+      }
+    }
+  },
+  "Player Killer Swashbuckler": {
+    "type": "Standard",
+    "tags": ["Human", "Adventurer"],
+    "rank": 2,
+    "STR": 2,
+    "DEX": 3,
+    "POW": 1,
+    "INT": 1,
+    "HP": 42,
+    "initiative": 4,
+    "speed": 2,
+    "evasion": "3+2D",
+    "phys_def": 8,
+    "resistance": "1+2D",
+    "mag_def": 6,
+    "id_diff": 7,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Swashbuckler's Flurry": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (4+3D vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [27+2D] physical damage. (Minor): The target takes [Pursuit: 10]."
+      },
+      "Unicorn Jump": {
+        "attack_type": "Movement",
+        "tags": null,
+        "timing": "Move",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy gains [Flying] and makes a [Safe Move] up to 3 Sq. At the end of the movement, the enemy loses [Flying]. (Minor): Increase the distance moved by +1 Sq."
+      }
+    }
+  },
+  "Red Cap": {
+    "type": "Mob",
+    "tags": ["Fairy", "Flame"],
+    "rank": 3,
+    "STR": 2,
+    "DEX": 3,
+    "POW": 1,
+    "INT": 2,
+    "HP": 24,
+    "initiative": 5,
+    "speed": 2,
+    "evasion": "9 (Fixed)",
+    "phys_def": 10,
+    "resistance": "7 (Fixed)",
+    "mag_def": 7,
+    "id_diff": 7,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Spirit of Fire": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy always has [Cancel (Flame): 10]. Whenever this enemy takes [Cold] damage, treat its defense as 0."
+      },
+      "Bloody Hatchet": {
+        "attack_type": "Melee Attack",
+        "tags": ["Flame"],
+        "timing": "Major",
+        "check": "Opposed (13 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [33+2D] physical damage. (Minor): The target takes [Decay: 5]."
+      },
+      "Sneaky Walk": {
+        "attack_type": "Movement",
+        "tags": null,
+        "timing": "Move",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy may make a [Normal Move] up to 2 Sq. If the enemy ends its movement in the same square as a [Natural] Prop, it gains a +2 bonus to [Dodge Checks]. Treat this effect as a Combat Status that is removed after applying once."
+      }
+    }
+  },
   "Repeater": {
     "type": "Standard",
     "tags": ["Gimmick", "Inorganic", "Mechanical"],
@@ -340,7 +1090,57 @@
       },
     }
   },
-  "Salamander": {},
+  "Salamander": {
+    "type": "Standard",
+    "tags": ["Fairy", "Flame"],
+    "rank": 2,
+    "STR": 1,
+    "DEX": 1,
+    "POW": 2,
+    "INT": 3,
+    "HP": 34,
+    "initiative": 2,
+    "speed": 2,
+    "evasion": "1+2D",
+    "phys_def": 5,
+    "resistance": "2+2D",
+    "mag_def": 8,
+    "id_diff": 3,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Spirit of Fire": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy always has [Cancel (Flame): 10]. Whenever this enemy takes [Cold] damage, treat its defense as 0."
+      },
+      "Flame Spit": {
+        "attack_type": "Magic Attack",
+        "tags": ["Flame"],
+        "timing": "Major",
+        "check": "Opposed (3+3D vs Resistance)",
+        "target": "Area (P)",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Deal [23+2D] magical damage."
+      },
+      "Dancing Inferno": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Minor",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "During this Main Process, this enemy's [Magic Attack] can be used with [Target: Wide 1 (P)]."
+      }
+    }
+  },
   "Scarecrow": {
     "type": "Standard",
     "tags": ["Construct", "Night Vision"],
@@ -392,8 +1192,108 @@
       }
     }
   },
-  "Skeleton": {},
-  "Skeleton Archer": {},
+  "Skeleton": {
+    "type": "Mob",
+    "tags": ["Undead", "Night Vision"],
+    "rank": 2,
+    "STR": 2,
+    "DEX": 3,
+    "POW": 1,
+    "INT": 1,
+    "HP": 21,
+    "initiative": 4,
+    "speed": 2,
+    "evasion": "9 (Fixed)",
+    "phys_def": 8,
+    "resistance": "7 (Fixed)",
+    "mag_def": 6,
+    "id_diff": 0,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Bag of Bones": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy always has [Weakness (Flame): 5] and [Weakness (Hafted): 5]. In addition, whenever this enemy takes [Holy] damage, it also takes [Dazed]."
+      },
+      "Tarnished Longsword": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (13 Fixed vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [30+2D] physical damage. (Minor): Increase the damage by +5. (Self: Pursuit): Increase the damage by +5."
+      },
+      "Grudge Sword": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Damage Roll",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy gains a +10 bonus to the damage roll of a [Melee Attack]."
+      }
+    }
+  },
+  "Skeleton Archer": {
+    "type": "Standard",
+    "tags": ["Undead", "Night Vision"],
+    "rank": 2,
+    "STR": 1,
+    "DEX": 2,
+    "POW": 1,
+    "INT": 3,
+    "HP": 36,
+    "initiative": 4,
+    "speed": 2,
+    "evasion": "2+2D",
+    "phys_def": 9,
+    "resistance": "1+2D",
+    "mag_def": 8,
+    "id_diff": 7,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Bag of Bones": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy always has [Weakness (Flame): 5] and [Weakness (Hafted): 5]. In addition, whenever this enemy takes [Holy] damage, it also takes [Dazed]."
+      },
+      "Ancient Bow": {
+        "attack_type": "Ranged Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (3+3D vs Evasion)",
+        "target": "Single",
+        "range": "3 Sq.",
+        "limit": null,
+        "description": "Deal [30+2D] physical damage. (Minor): At the end of this enemy's Main Process, it may make a [Safe Move] of 1 Sq. This additional effect cannot be used if this enemy has [Rigor]. (Self: Pursuit): Increase the damage by +5."
+      },
+      "Grudge Arrow": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Damage Roll",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": "1/Scene",
+        "description": "This enemy gains a +10 bonus to the damage roll of a [Ranged Attack]."
+      }
+    }
+  },
   "Triffid": {
     "type": "Mob",
     "tags": ["Nature", "Plant"],
