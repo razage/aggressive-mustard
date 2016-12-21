@@ -19,6 +19,26 @@
     "price": 120,
     "description": "Deal [26+2D] physical damage to the target. This damage always has the [Blight] tag, even if another effect would overwrite it."
   },
+  "Adroit Hand Card I": {
+    "rank": 2,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 60,
+    "description": "The next time the target performs a [Prop Disable], they gain a +1D bonus to the check. The effect of multiple Adroit Hand Cards (regardless of rank) do not stack, and the effect is removed after being applied once, or at the end of the scene. (CR9): This item has no effect."
+  },
+  "Adroit Hand Card II": {
+    "rank": 9,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 230,
+    "description": "The next time the target performs a [Prop Disable], they gain a +1D bonus to the check. The effect of multiple Adroit Hand Cards (regardless of rank) do not stack, and the effect is removed after being applied once, or at the end of the scene. (CR16): This item has no effect."
+  },
   "Antidote I": {
     "rank": 1,
     "tags": ["Medicine", "Consumable"],
@@ -269,6 +289,26 @@
     "price": 190,
     "description": "The target gains a +1 bonus to [Evasion]. (CR14): This item has no effect."
   },
+  "Eagle Card I": {
+    "rank": 8,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 170,
+    "description": "During this Main Process, the target gains [Flying]. (CR18): This item has no effect."
+  },
+  "Elemental Card I": {
+    "rank": 1,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "Select one: [Flame] [Cold] [Shock] [Blight] [Holy] or [Spirit]. During the target's Main Process, they deal damage of the chosen tag. (CR11) This item has no effect."
+  },
   "Enduring Magic Salve": {
     "rank": 6,
     "tags": ["Medicine", "Consumable", "Preparation"],
@@ -339,6 +379,16 @@
     "price": 45,
     "description": "Increase your Hate by +1. The target gains the [Aquatic] tag. Treat this effect as a Combat Status. (Fate 1): You can use this item with [Target: Wide 2 (P)]. (CR12): This item has no effect."
   },
+  "Focus Card I": {
+    "rank": 6,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 90,
+    "description": "During the target's Main Process, the target's [Normal Moves] become [Safe Moves]. (CR16): This item has no effect."
+  },
   "Food Bag": {
     "rank": 8,
     "tags": ["Bag"],
@@ -369,6 +419,16 @@
     "price": 130,
     "description": "This scroll targets the next scene. Compare your check result against the [Identification Difficulty] of each enemy appearing in the next scene. For each success, you learn the name and appearance of that enemy. You take [Fatigue: Base STR]. (Fumble): The enemy notices your scouting."
   },
+  "Healing Card I": {
+    "rank": 4,
+    "tags": ["Charm", "Consumable", "Rare"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 60,
+    "description": "During the current Main Process, the target gains a +10 bonus to [Recovery]. The effect of multiple Healing Cards (regardless of grade) do not stack."
+  },
   "Healing Potion I": {
     "rank": 1,
     "tags": ["Medicine", "Consumable", "Rare"],
@@ -378,6 +438,16 @@
     "check": null,
     "price": 40,
     "description": "The target recovers 25 HP."
+  },
+  "Hex Card I": {
+    "rank": 1,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "During this Main Process, the target gains a +2D bonus to [Magic Attack] damage rolls. The effect of multiple Hex Cards (regardless of rank) do not stack."
   },
   "Holy Water I": {
     "rank": 1,
@@ -408,6 +478,16 @@
     "check": null,
     "price": 90,
     "description": "The target gains a +4 bonus to [Physical Defense]."
+  },
+  "Iron Gut Card I": {
+    "rank": 2,
+    "tags": ["Charm", "Consumable", "Rare"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 45,
+    "description": "The next time the target would take damage, reduce the damage by -5. The effect of multiple Iron Gut Cards (regardless of grade) do not stack, and the effect is removed after being applied once, or at teh end of the scene."
   },
   "Jewel of Rebirth I": {
     "rank": 1,
@@ -458,6 +538,16 @@
     "check": null,
     "price": 50,
     "description": "Increase your number of Inventory Slots for [Food] items only by +3."
+  },
+  "Magical Card I": {
+    "rank": 5,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 70,
+    "description": "During the target's Main Process, physical damage they deal changes to magical damage. (CR15): This item has no effect."
   },
   "Mass Enchant Scroll I": {
     "rank": 9,
@@ -529,6 +619,16 @@
     "price": 35,
     "description": "The target removes any two Bad Statuses currently affecting them. (CR11): This item has no effect."
   },
+  "Physical Card I": {
+    "rank": 3,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "During the target's Main Process, magical damage they deal changes to physical damage. (CR13): This item has no effect."
+  },
   "Potion Holder I": {
     "rank": 3,
     "tags": ["Bag", "Accessory"],
@@ -548,6 +648,36 @@
     "check": null,
     "price": 110,
     "description": "Increase your number of Inventory Slots by +3."
+  },
+  "Pure Eye Card I": {
+    "rank": 2,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 60,
+    "description": "The next time the target performs [Prop Analyze], they gain a +1D bonus to the check. The effect of multiple Pure Eye Cards (regardless of rank) do not stack, and the effect is removed after being applied once, or at the end of the scene. (CR9): This item has no effect."
+  },
+  "Pure Eye Card II": {
+    "rank": 9,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 230,
+    "description": "The next time the target performs [Prop Analyze], they gain a +1D bonus to the check. The effect of multiple Pure Eye Cards (regardless of rank) do not stack, and the effect is removed after being applied once, or at the end of the scene. (CR16): This item has no effect."
+  },
+  "Quick Card I": {
+    "rank": 7,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 170,
+    "description": "During the target's current Main Process, the target receives an extra minor action. The effect of multiple Quick Cards (regardless of rank) do not stack. (CR17): This item has no effect."
   },
   "Regen Potion I": {
     "rank": 1,
@@ -739,6 +869,16 @@
     "price": 190,
     "description": "When you acquire this potion, select one: Athletics, Endurance, Disable, Operate, Perception, Negotiation, Analysis, Knowledge, and record this item as Skill Potion II: (Chosen Skill). The target gains a +1 bonus to the chosen skill. Treat this effect as a Combat Status. (CR17): This item has no effect."
   },
+  "Slash Card I": {
+    "rank": 1,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "During this Main Process, the target gains a +2D bonus to [Weapon Attack] damage rolls. The effect of multiple Slash Cards (regardless of rank) do not stack."
+  },
   "Standard Curry": {
     "rank": 10,
     "tags": ["Food", "Consumable", "Preparation"],
@@ -809,6 +949,16 @@
     "price": 60,
     "description": "The target takes [Dazed]."
   },
+  "True Sight Card I": {
+    "rank": 5,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": "Basic (5+2D vs Resistance)",
+    "price": 70,
+    "description": "This item targets everything in range that has a [Detection Difficulty]. The target removes [Concealed] or [Hidden]. You do not have to apply this effect to your allies."
+  },
   "Unyielding Salve I": {
     "rank": 10,
     "tags": ["Medicine", "Consumable", "Preparation"],
@@ -848,5 +998,15 @@
     "check": null,
     "price": 70,
     "description": "Increase your number of Inventory Slots by +2. Items inside the bag cannot be the target of effects that would normally cause items to vanish."
+  },
+  "White Construct I": {
+    "rank": 1,
+    "tags": ["Charm", "Consumable"],
+    "timing": "Move",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "When the target next applies a [Barrier], increase the rating of that [Barrier] by +2D. The effect of multiple White Constructs (regardless of rank) do not stack, and this effect is removed after being applied once, or at the end of the scene."
   }
 }
