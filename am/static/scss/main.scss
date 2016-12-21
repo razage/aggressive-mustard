@@ -1,10 +1,25 @@
 @import "global";
 
+html {
+  font-family: arial;
+  font-size: 12px;
+}
+
 .content {
   width: 50%;
   margin: 0 auto;
 
   li {
     text-align: left;
+  }
+}
+
+.statblock {
+  width: 75%;
+  border: 1px solid;
+
+  /* CSS sorcery for special styling when there are 6+ children */
+  td:nth-last-child(n+6) ~ td, td:nth-last-child(n+6):first-child {
+    width: calc(100% / 6);
   }
 }

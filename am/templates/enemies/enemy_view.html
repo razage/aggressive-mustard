@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <table class="statblock" width="75%" border="1">
+    <table class="statblock">
         <thead>
             <tr>
                 <td class="inverted centered" colspan="6">{{ enemy.name }}</td>
@@ -9,10 +9,10 @@
         <tbody>
             <tr>
                 <td class="centered" width="17%">{{ enemy.enemy_type.name }}</td>
-                <td class="centered" width="17%">{% if enemy.tags[0] is defined %}{{ enemy.tags[0].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="16%">{% if enemy.tags[0] is defined %}{{ enemy.tags[0].name }} {% else %}-{% endif %}</td>
                 <td class="centered" width="16%">{% if enemy.tags[1] is defined %}{{ enemy.tags[1].name }} {% else %}-{% endif %}</td>
                 <td class="centered" width="16%">{% if enemy.tags[2] is defined %}{{ enemy.tags[2].name }} {% else %}-{% endif %}</td>
-                <td class="centered" width="17%">{% if enemy.tags[3] is defined %}{{ enemy.tags[3].name }} {% else %}-{% endif %}</td>
+                <td class="centered" width="16%">{% if enemy.tags[3] is defined %}{{ enemy.tags[3].name }} {% else %}-{% endif %}</td>
                 <td class="centered" width="17%">{% if enemy.tags[4] is defined %}{{ enemy.tags[4].name }} {% else %}-{% endif %}</td>
             </tr>
             <tr>
