@@ -17,6 +17,7 @@ db.session.commit()
 
 exports = OrderedDict([
     ("tags", Path(join(app.config['BASEDIR'], "initial_data", "tags.json"))),
+    ("items", Path(join(app.config['BASEDIR'], "initial_data", "items.json"))),
     ("classes", Path(join(app.config['BASEDIR'], "initial_data", "classes.json"))),
     ("races", Path(join(app.config['BASEDIR'], "initial_data", "races.json"))),
     ("servers", Path(join(app.config['BASEDIR'], "initial_data", "servers.json"))),
@@ -32,6 +33,20 @@ for f in exports.items():
             _tag = Tag(t[0], _data['category'], _data['description'])
             db.session.add(_tag)
         db.session.commit()
+
+    elif f[0] == "items" and f[1].is_file():
+        items = load(open(str(f[1])), object_pairs_hook=OrderedDict)
+
+        for i in items.items():
+            _data = i[1]
+            _item = Item(i[0], _data['rank'], _data['timing'], _data['target'], _data['range'], _data['check'], _data['price'], _data['description'])
+
+            if _data['tags'] is not None:
+                for tag in _data['tags']:
+                    item.tags.append(Tag.query.filter(Tag.name == tag).one())
+
+            db.session.add(_item)
+            db.session.commit()
 
     elif f[0] == "classes" and f[1].is_file():
         classes = load(open(str(f[1])), object_pairs_hook=OrderedDict)
