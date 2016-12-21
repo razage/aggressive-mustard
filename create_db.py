@@ -39,11 +39,12 @@ for f in exports.items():
 
         for i in items.items():
             _data = i[1]
-            _item = Item(i[0], _data['rank'], _data['timing'], _data['target'], _data['range'], _data['check'], _data['price'], _data['description'])
+            _item = Item(i[0], _data['rank'], _data['timing'], _data['target'], _data['range'], _data['check'],
+                         _data['price'], _data['description'])
 
             if _data['tags'] is not None:
                 for tag in _data['tags']:
-                    item.tags.append(Tag.query.filter(Tag.name == tag).one())
+                    _item.tags.append(Tag.query.filter(Tag.name == tag).one())
 
             db.session.add(_item)
             db.session.commit()
