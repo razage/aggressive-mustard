@@ -1,350 +1,358 @@
 {
   "Accessory": {
     "category": "Equipment Slot",
-    "description": ""
+    "description": null
   },
   "Adventurer": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "After Damage": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Auto": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Automatic": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Bag": {
     "category": "Equipment Slot",
-    "description": ""
+    "description": null
   },
   "Before Damage": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Blade": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Blight": {
     "category": "Elements",
-    "description": ""
+    "description": null
   },
   "Boots": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Boss": {
     "category": "Enemy Type",
-    "description": ""
+    "description": null
   },
   "Bow": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Charm": {
     "category": "Item Type",
-    "description": ""
+    "description": "Small sheafs of paper that boost the user's abilities."
   },
   "Cleanup": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Cloak": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Clockwork": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Cold": {
     "category": "Elements",
-    "description": ""
+    "description": null
   },
   "Combat": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Construct": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Consumable": {
     "category": "Classification",
-    "description": ""
+    "description": "Once you use it, it's gone."
+  },
+  "Damaged": {
+    "category": null,
+    "description": "Broken or otherwise unusable, Damaged items cannot be used or equipped."
   },
   "Dual Wield": {
-    "category": "Action",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "Enchantment": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Fairy": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Flame": {
     "category": "Elements",
-    "description": ""
+    "description": null
   },
   "Food": {
     "category": "Item Type",
-    "description": ""
+    "description": "Used to restore Fatigue."
   },
   "Gem": {
     "category": "Item Type",
-    "description": ""
+    "description": "Produces an effect for a cost."
   },
   "General": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Genius": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Gimmick": {
-    "category": "",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "Gloves": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Goblin": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Hafted": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Harmony": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Heavy Armor": {
     "category": "Armor Type",
-    "description": ""
+    "description": null
   },
   "Helm": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Holy": {
     "category": "Elements",
-    "description": ""
+    "description": null
   },
   "Human": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Humanoid": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Inorganic": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Instrument": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Katana": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Kobold": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Light": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Light Armor": {
     "category": "Armor Type",
-    "description": ""
+    "description": null
   },
   "Magic Attack": {
     "category": "Action",
-    "description": ""
+    "description": null
   },
   "Magic Stone": {
     "category": "Classification",
-    "description": ""
+    "description": null
   },
   "Magical": {
-    "category": "",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "Martial Arts": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Mechanical": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Medicine": {
     "category": "Item Type",
-    "description": ""
+    "description": "Recovery items. Can be fed to other characters with [Timing: Major/Target: Single]."
   },
   "Medium Armor": {
     "category": "Armor Type",
-    "description": ""
+    "description": null
   },
   "Melee Attack": {
     "category": "Attack Type",
-    "description": ""
+    "description": null
   },
   "Mob": {
     "category": "Enemy Type",
-    "description": ""
+    "description": null
   },
   "Movement": {
     "category": "Attack Type",
-    "description": ""
+    "description": null
   },
   "Mythic": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Natural": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Nature": {
-    "category": "Elements",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "Night Vision": {
-    "category": "",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "One-Handed": {
     "category": "Equipment Slot",
-    "description": ""
+    "description": null
   },
   "Plant": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Preparation": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Ranged Attack": {
     "category": "Attack Type",
-    "description": ""
+    "description": null
   },
   "Rare": {
-    "category": "Rarity",
-    "description": ""
+    "category": null,
+    "description": "This item can't be purchased from NPCs."
   },
   "Refer": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Scout": {
     "category": "Action",
-    "description": ""
+    "description": null
   },
   "Scroll": {
     "category": "Item Type",
-    "description": ""
+    "description": "Magical incantations that produce various effects."
   },
   "Servant Summon": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Service": {
-    "category": "",
-    "description": ""
+    "category": null,
+    "description": null
   },
   "Setup": {
     "category": "Timing",
-    "description": ""
+    "description": null
   },
   "Shield": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Shock": {
     "category": "Elements",
-    "description": ""
+    "description": null
   },
   "Spear": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
+  },
+  "Soulbound": {
+    "category": null,
+    "description": "These items can't be bought, sold, or traded between PCs."
   },
   "Special Attack": {
     "category": "Attack Type",
-    "description": ""
+    "description": null
   },
   "Spirit": {
-    "category": "",
-    "description": ""
+    "category": "Elements",
+    "description": null
   },
   "Staff": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Stance": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Standard": {
     "category": "Enemy Type",
-    "description": ""
+    "description": null
   },
   "Style": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Swift": {
     "category": "Action",
-    "description": ""
+    "description": null
   },
   "Throwing": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   },
   "Toxin": {
     "category": "Item Type",
-    "description": ""
+    "description": null
   },
   "Training": {
     "category": "Skill Type",
-    "description": ""
+    "description": null
   },
   "Two-Handed": {
     "category": "Equipment Slot",
-    "description": ""
+    "description": null
   },
   "Undead": {
     "category": "Species",
-    "description": ""
+    "description": null
   },
   "Valuable": {
-    "category": "Rarity",
-    "description": ""
+    "category": null,
+    "description": "This item's only purpose is to be sold for money."
   },
   "Weapon Attack": {
     "category": "Attack Type",
-    "description": ""
+    "description": null
   },
   "Whip": {
     "category": "Weapon Type",
-    "description": ""
+    "description": null
   }
 }
