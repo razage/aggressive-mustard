@@ -1,0 +1,14 @@
+@import "colors";
+
+.centered {
+  text-align: centered;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.inverted {
+  background: $black;
+  color: $white;
+}

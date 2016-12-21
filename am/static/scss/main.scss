@@ -1,8 +1,4 @@
-@import "colors";
-
-.centered {
-  text-align: centered;
-}
+@import "global";
 
 .content {
   width: 50%;
@@ -11,13 +7,4 @@
   li {
     text-align: left;
   }
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-.inverted {
-  background: $black;
-  color: $white;
 }
