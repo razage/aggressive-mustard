@@ -1,0 +1,652 @@
+{
+  "Antidote I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 20,
+    "description": "The target removes a [Decay] condition with a rating of 20 or less."
+  },
+  "Backpack": {
+    "rank": 1,
+    "tags": ["Bag"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": "Increase your number of Inventory Slots by +5."
+  },
+  "Bag of Holding": {
+    "rank": 5,
+    "tags": ["Bag"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 90,
+    "description": "Increase your number of Inventory Slots by +6. This is often referred to as Tohra's Magic Bag."
+  },
+  "Barrier Jewel I": {
+    "rank": 1,
+    "tags": ["Gem", "Consumable", "Rare"],
+    "timing": "Setup",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "Increase your Hate by +1. The target gains [Barrier: 15]."
+  },
+  "Basket": {
+    "rank": 1,
+    "tags": ["Bag", "One-Handed"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": "Increase your number of Inventory Slots by +3."
+  },
+  "Beef Stew": {
+    "rank": 1,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 20,
+    "description": "The target's [Fatigue] rating decreases by -10."
+  },
+  "Berry Tart": {
+    "rank": 4,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "The target's [Fatigue] rating decreases by -20."
+  },
+  "Boiled Mystery Bird": {
+    "rank": 9,
+    "tags": ["Food", "Consumable", "Preparation", "Rare"],
+    "timing": "Rest Time",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 210,
+    "description": "The target's [Fatigue] rating decreases by -35."
+  },
+  "Bottle of Magic Potency I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "The target's [Magic Power] gains a +2 bonus. Treat this as a Combat Status. (CR13): This item has no effect."
+  },
+  "Bottle of Mighty Strikes I": {
+    "rank": 3,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "The target's [Attack Power] gains a +2 bonus. Treat this as a Combat Status. (CR13): This item has no effect."
+  },
+  "Chef's Choice Pizza": {
+    "rank": 3,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 60,
+    "description": "The target's [Fatigue] rating decreases by -10."
+  },
+  "Club Sandwich Basket": {
+    "rank": 1,
+    "tags": ["Food", "Consumable", "Preparation", "Rare"],
+    "timing": "Rest Time",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 30,
+    "description": "The target's [Fatigue] rating decreases by -6."
+  },
+  "Crescent Burger": {
+    "rank": 2,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 30,
+    "description": "The target's [Fatigue] rating decreases by -8."
+  },
+  "Dark Vision Potion I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "You gain the [Dark Vision] tag. Treat this effect as a Combat Status. (CR13): This item has no effect."
+  },
+  "Dodge Salve I": {
+    "rank": 7,
+    "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 190,
+    "description": "The target gains a +1 bonus to [Evasion]. (CR14): This item has no effect."
+  },
+  "Enduring Magic Salve": {
+    "rank": 6,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 90,
+    "description": "The target gains a +4 bonus to [Magic Defense]."
+  },
+  "Explorer's Scroll I": {
+    "rank": 2,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "Choose one: [Flame] [Cold] [Shock] [Blight] [Spirit]. The target takes no damage with the chosen tag. Treat this effect as a Combat Status. You take [Fatigue: (Base STR x 2)]. (CR12): This item has no effect."
+  },
+  "Failed Cuisine": {
+    "rank": 1,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 10,
+    "description": "The target's [Fatigue] rating decreases by -2. Any number of this item can be stored in a single Item Slot. This food has no taste and is unappealing."
+  },
+  "Favorite Sandwich": {
+    "rank": 1,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 10,
+    "description": "The target's [Fatigue] rating decreases by -5."
+  },
+  "Fish Scales Gemstone I": {
+    "rank": 2,
+    "tags": ["Gem", "Consumable"],
+    "timing": "Setup",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 45,
+    "description": "Increase your Hate by +1. The target gains the [Aquatic] tag. Treat this effect as a Combat Status. (Fate 1): You can use this item with [Target: Wide 2 (P)]. (CR12): This item has no effect."
+  },
+  "Food Bag": {
+    "rank": 8,
+    "tags": ["Bag"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 170,
+    "description": "Increase your number of Inventory Slots for [Food] items only by +12."
+  },
+  "Glimpse Scroll I": {
+    "rank": 1,
+    "tags": ["Scroll", "Consumable", "Scout"],
+    "timing": "Briefing",
+    "target": "Refer",
+    "range": "Refer",
+    "check": "Basic (5+2D vs Enemy Identification)",
+    "price": 30,
+    "description": "This scroll targets the next scene. Compare your check result against the [Identification Difficulty] of each enemy appearing in the next scene. For each success, you learn the name and appearance of that enemy. You take [Fatigue: Base STR]. (Fumble): The enemy notices your scouting."
+  },
+  "Glimpse Scroll II": {
+    "rank": 8,
+    "tags": ["Scroll", "Consumable", "Scout"],
+    "timing": "Briefing",
+    "target": "Refer",
+    "range": "Refer",
+    "check": "Basic (8+2D vs Enemy Identification)",
+    "price": 130,
+    "description": "This scroll targets the next scene. Compare your check result against the [Identification Difficulty] of each enemy appearing in the next scene. For each success, you learn the name and appearance of that enemy. You take [Fatigue: Base STR]. (Fumble): The enemy notices your scouting."
+  },
+  "Healing Potion I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable", "Rare"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "The target recovers 25 HP."
+  },
+  "Iron Body Salve I": {
+    "rank": 6,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 90,
+    "description": "The target gains a +4 bonus to [Physical Defense]."
+  },
+  "Jewel of Rebirth I": {
+    "rank": 1,
+    "tags": ["Gem", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "Increase your Hate by +2. The target removes the [Incapacitated] condition, and recovers [Target's CR] HP. (Fate 1): This item's Hate cost is reduced to 0. (CR11): This item has no effect."
+  },
+  "Jewel of the Firefly": {
+    "rank": 1,
+    "tags": ["Gem", "Consumable"],
+    "timing": "Setup",
+    "target": "Wide 20 (A)",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "Increases your Hate by +1. All [Dim Light] [Night] and [Darkness] effects within range are negated. This effect ends when the scene does. (Fate 1): This item's Hate cost is reduced to 0."
+  },
+  "Jewel of the Swift Horse I": {
+    "rank": 8,
+    "tags": ["Gem", "Consumable", "Rare"],
+    "timing": "Setup",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 140,
+    "description": "Increase your Hate by +1. The target gains a +1 bonus to [Speed]. Treat this effect as a Combat Status that lasts until the end of the round. (Fate 1): This effect lasts until the end of the scene instead. (CR18): This item has no effect."
+  },
+  "Life-Calling Jewel I": {
+    "rank": 1,
+    "tags": ["Gem", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 20,
+    "description": "Increase your Hate by +1. This jewel only produces an effect when the target is of the Healer Archetype. The target removes the [Incapacitated] condition and recovers [Target's CR] HP. (Fate 1): This item's Hate cost is reduced to 0. (CR11): This item has no effect."
+  },
+  "Lunch Box": {
+    "rank": 1,
+    "tags": ["Bag", "Accessory"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": "Increase your number of Inventory Slots for [Food] items only by +3."
+  },
+  "Mass Enchant Scroll I": {
+    "rank": 9,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 150,
+    "description": "Choose one: [Flame] [Cold] [Shock] [Holy] [Blight] or [Spirit]. The target's [Weapon Attack] deal magical damage of the chosen tag type. Treat this effect as a Combat Status. You take [Fatigue: Base STR]. (CR18): This item has no effect."
+  },
+  "Mass Protect Scroll I": {
+    "rank": 7,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 100,
+    "description": "Choose one: [Flame] [Cold] [Shock] [Holy] [Blight] or [Spirit]. The target gains [Cancel (Chosen Tag): 5]. You take [Fatigue: (Base STR x 2)]. (CR16): This item has no effect."
+  },
+  "Mass Stealth Scroll I": {
+    "rank": 8,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Briefing",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 150,
+    "description": "When the target appears in the next scene, they will have the [Hidden] status. You take [Fatigue: (Base STR x 2)]. (CR18): This item has no effect."
+  },
+  "Mini-Pouch": {
+    "rank": 1,
+    "tags": ["Bag", "Accessory"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": "Increase your number of Inventory Slots by +2."
+  },
+  "Mystic Wing Gemstone I": {
+    "rank": 3,
+    "tags": ["Gem", "Consumable"],
+    "timing": "Setup",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "Increase your Hate by +1. The target gains [Flight]. Treat this effect as a Combat Status. (CR13): This item has no effect."
+  },
+  "Onigiri": {
+    "rank": 5,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "The target's [Fatigue] rating decreases by -15."
+  },
+  "Panacea I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 35,
+    "description": "The target removes any two Bad Statuses currently affecting them. (CR11): This item has no effect."
+  },
+  "Potion Holder I": {
+    "rank": 3,
+    "tags": ["Bag", "Accessory"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 60,
+    "description": "Increase your number of Inventory Slots for [Medicine] and [Toxin] items only by +4."
+  },
+  "Pouch": {
+    "rank": 6,
+    "tags": ["Bag", "Accessory"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 110,
+    "description": "Increase your number of Inventory Slots by +3."
+  },
+  "Regen Potion I": {
+    "rank": 1,
+    "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 45,
+    "description": "The target gains [Regen: 5]."
+  },
+  "Scroll of Acceleration I": {
+    "rank": 3,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 45,
+    "description": "The target gains a +4 bonus to [Initiative]. Treat this effect as a Combat Status. You take [Fatigue: Base STR]. (CR13): This item has no effect."
+  },
+  "Scroll of Clairvoyance I": {
+    "rank": 1,
+    "tags": ["Scroll", "Consumable", "Scout"],
+    "timing": "Briefing",
+    "target": "Refer",
+    "range": "Refer",
+    "check": "Automatic",
+    "price": 30,
+    "description": "This scroll targets the next scene. You learn the name, rank, and tags of every Prop with [Detection Difficulty: Automatic] in that scene. As a cost, you take [Fatigue: Base STR], for using this scroll. (CR11): This item has no effect."
+  },
+  "Scroll of Enchanting I": {
+    "rank": 3,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 45,
+    "description": "Choose one: [Flame] [Cold] [Shock] [Holy] [Blight] [Spirit]. The target's [Weapon Attack] deal magical damage of the chosen tag type. Treat this effect as a Combat Status. You take [Fatigue: Base STR]. (CR13): This item has no effect."
+  },
+  "Scroll of Flight I": {
+    "rank": 4,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "The target gains [Flying]. Treat this effect as a Combat Status. You take [Fatigue: (Base STR x 2)]. (CR14): This item has no effect."
+  },
+  "Scroll of Light I": {
+    "rank": 2,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Wide 20 (A)",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "All [Dim Light] [Night] and [Darkness] effects within range are negated. This effect ends when the scene does. You take [Fatigue: Base STR]."
+  },
+  "Scroll of Mass Flight I": {
+    "rank": 10,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 210,
+    "description": "The target gains [Flying]. Treat this effect as a Combat Status. You take [Fatigue: (Base STR x 2)]. (CR18): This item has no effect."
+  },
+  "Scroll of Protection I": {
+    "rank": 5,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 70,
+    "description": "Choose one: [Flame] [Cold] [Shock] [Holy] [Blight] or [Spirit]. The target gains [Cancel (Chosen Tag)]. You take [Fatigue: Base STR]. (CR15): This item has no effect."
+  },
+  "Scroll of Scrying I": {
+    "rank": 1,
+    "tags": ["Scroll", "Consumable", "Scout"],
+    "timing": "Briefing",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 30,
+    "description": "You can target any enemy appearing in the next scene that you know the name of with [Enemy Identification]. You take [Fatigue: Base STR]. (CR11): This item has no effect."
+  },
+  "Scroll of Sight I": {
+    "rank": 5,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 70,
+    "description": "The target recognizes and may act against characters with the [Hidden] effect as if they did not have that effect (however, this effect does not remove the [Hidden] condition from the character). Treat this effect as a Combat Status. You take [Fatigue: Base STR]."
+  },
+  "Scroll of Stealth I": {
+    "rank": 6,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Briefing",
+    "target": "Single",
+    "range": "Close",
+    "check": null,
+    "price": 100,
+    "description": "When the target appears in the next scene, they will have the [Hidden] status. You take [Fatigue: (Base STR x 2)]. (CR16): This item has no effect."
+  },
+  "Scroll of Sweeping I": {
+    "rank": 1,
+    "tags": ["Scroll", "Consumable"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "4 Sq.",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 30,
+    "description": "This scroll only produces an effect against [Mob] enemies. The target is [Incapacitated] or [Dead] (your choice). As a cost, you take [Fatigue: Base STR] for using this scroll."
+  },
+  "Scroll of Sweeping II": {
+    "rank": 7,
+    "tags": ["Scroll", "Consumable"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "4 Sq.",
+    "check": "Opposed (8+2D vs Resistance)",
+    "price": 100,
+    "description": "This scroll only produces an effect against [Mob] enemies. The target is [Incapacitated] or [Dead] (your choice). As a cost, you take [Fatigue: Base STR] for using this scroll."
+  },
+  "Scroll of the Fish I": {
+    "rank": 4,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "The target gains the [Aquatic] tag. Treat this effect as a Combat Status. You take [Fatigue: Base STR]. (CR14): This item has no effect."
+  },
+  "Scroll of the Pure Eye I": {
+    "rank": 5,
+    "tags": ["Scroll", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 70,
+    "description": "The target treats all Props with the [Magic] tag as if they had [Detection Difficulty: Automatic]. Treat this effect as a Combat Status. You take [Fatigue: (Base STR x 2)]. (CR15): This item has no effect."
+  },
+  "Skill Potion I": {
+    "rank": 3,
+    "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 50,
+    "description": "When you acquire this potion, select one: Athletics, Endurance, Disable, Operate, Perception, Negotiation, Analysis, Knowledge, and record this item as Skill Potion I: (Chosen Skill). The target gains a +1 bonus to the chosen skill. Treat this effect as a Combat Status. (CR10): This item has no effect."
+  },
+  "Skill Potion II": {
+    "rank": 10,
+    "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 190,
+    "description": "When you acquire this potion, select one: Athletics, Endurance, Disable, Operate, Perception, Negotiation, Analysis, Knowledge, and record this item as Skill Potion II: (Chosen Skill). The target gains a +1 bonus to the chosen skill. Treat this effect as a Combat Status. (CR17): This item has no effect."
+  },
+  "Standard Curry": {
+    "rank": 10,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 130,
+    "description": "The target's [Fatigue] rating decreases by -40."
+  },
+  "Three-Egg Fried Rice": {
+    "rank": 7,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Rest Time",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 70,
+    "description": "The target's [Fatigue] rating decreases by -30."
+  },
+  "Tonsuton's Fried Meats Platter": {
+    "rank": 6,
+    "tags": ["Food", "Consumable", "Preparation", "Rare"],
+    "timing": "Rest Time",
+    "target": "Area (P)",
+    "range": "Close",
+    "check": null,
+    "price": 120,
+    "description": "The target's [Fatigue] rating decreases by -20."
+  },
+  "Topoto Master Croquette": {
+    "rank": 8,
+    "tags": ["Food", "Consumable", "Preparation"],
+    "timing": "Major",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 90,
+    "description": "The target's [Fatigue] rating decreases by -25."
+  },
+  "Tote Bag": {
+    "rank": 7,
+    "tags": ["Bag", "One-Handed"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 140,
+    "description": "Increase your number of Inventory Slots by +4."
+  },
+  "Unyielding Salve I": {
+    "rank": 10,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 190,
+    "description": "The target gains [Cancel: 5]."
+  },
+  "Warding Salve I": {
+    "rank": 7,
+    "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 190,
+    "description": "The target gains a +1 bonus to [Resistance]. (CR14): This item has no effect."
+  },
+  "Water Breathing Potion I": {
+    "rank": 3,
+    "tags": ["Medicine", "Consumable", "Preparation"],
+    "timing": "Minor",
+    "target": "Self",
+    "range": "Close",
+    "check": null,
+    "price": 40,
+    "description": "You gain the [Aquatic] tag. Treat this effect as a Combat Status. (CR13): This item has no effect."
+  },
+  "Waterproof Bag": {
+    "rank": 4,
+    "tags": ["Bag"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 70,
+    "description": "Increase your number of Inventory Slots by +2. Items inside the bag cannot be the target of effects that would normally cause items to vanish."
+  }
+}
