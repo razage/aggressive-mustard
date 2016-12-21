@@ -1,10 +1,18 @@
+from os.path import join
+
 from flask import Flask, render_template
+from flask_assets import Environment, Bundle
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config.from_object('config')
 
 db = SQLAlchemy(app)
+
+assets = Environment(app)
+assets.url = app.static_url_path
+scss = Bundle("scss/main.scss", filters='pyscss', output="css/main.css")
+assets.register('scss_all', scss)
 
 
 @app.route('/')

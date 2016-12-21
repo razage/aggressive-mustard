@@ -1,0 +1,23 @@
+@import "colors";
+
+.centered {
+  text-align: centered;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+
+  li {
+    text-align: left;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.inverted {
+  background: $black;
+  color: $white;
+}

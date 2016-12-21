@@ -4,6 +4,7 @@
 # folders
 .idea/
 __pycache__/
+am/static/.webassets-cache
 
 # specific files
 initial_data/tags.txt

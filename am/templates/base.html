@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% assets "scss_all" %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
     <meta charset="UTF-8">
     <title>{{ title }}</title>
 </head>
