@@ -1,4 +1,24 @@
 {
+  "Acidic Poison I": {
+    "rank": 4,
+    "tags": ["Toxin", "Consumable", "Blight"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 40,
+    "description": "Deal [11+2D] physical damage to the target. This damage always has the [Blight] tag, even if another effect would overwrite it."
+  },
+  "Acidic Poison II": {
+    "rank": 9,
+    "tags": ["Toxin", "Consumable", "Blight"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (6+2D vs Resistance)",
+    "price": 120,
+    "description": "Deal [26+2D] physical damage to the target. This damage always has the [Blight] tag, even if another effect would overwrite it."
+  },
   "Antidote I": {
     "rank": 1,
     "tags": ["Medicine", "Consumable"],
@@ -69,6 +89,26 @@
     "price": 40,
     "description": "The target's [Fatigue] rating decreases by -20."
   },
+  "Binding Poison I": {
+    "rank": 3,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 35,
+    "description": "The target takes [Rigor]."
+  },
+  "Binding Poison II": {
+    "rank": 8,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (6+2D vs Resistance)",
+    "price": 100,
+    "description": "The target takes [Rigor]."
+  },
   "Boiled Mystery Bird": {
     "rank": 9,
     "tags": ["Food", "Consumable", "Preparation", "Rare"],
@@ -119,6 +159,26 @@
     "price": 30,
     "description": "The target's [Fatigue] rating decreases by -6."
   },
+  "Convulsion Poison I": {
+    "rank": 4,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (2+2D vs Resistance)",
+    "price": 40,
+    "description": "The target takes [Staggered]."
+  },
+  "Convulsion Poison II": {
+    "rank": 9,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 120,
+    "description": "The target takes [Staggered]."
+  },
   "Crescent Burger": {
     "rank": 2,
     "tags": ["Food", "Consumable", "Preparation"],
@@ -129,6 +189,26 @@
     "price": 30,
     "description": "The target's [Fatigue] rating decreases by -8."
   },
+  "Curse Poison I": {
+    "rank": 1,
+    "tags": ["Toxin", "Consumable", "Blight"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (3+2D vs Resistance)",
+    "price": 20,
+    "description": "Deal [2+2D] magical damage to the target. This damage always has the [Blight] tag, even if another effect would overwrite it."
+  },
+  "Curse Poison II": {
+    "rank": 6,
+    "tags": ["Toxin", "Consumable", "Blight"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 60,
+    "description": "Deal [17+2D] magical damage to the target. This damage always has the [Blight] tag, even if another effect would overwrite it."
+  },
   "Dark Vision Potion I": {
     "rank": 1,
     "tags": ["Medicine", "Consumable"],
@@ -138,6 +218,46 @@
     "check": null,
     "price": 40,
     "description": "You gain the [Dark Vision] tag. Treat this effect as a Combat Status. (CR13): This item has no effect."
+  },
+  "Deadly Poison I": {
+    "rank": 1,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (3+2D vs Resistance)",
+    "price": 20,
+    "description": "This item only has an effect if the target is a [Mob] enemy. The target becomes [Incapacitated] or [Dead] (your choice)."
+  },
+  "Deadly Poison II": {
+    "rank": 6,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 60,
+    "description": "This item only has an effect if the target is a [Mob] enemy. The target becomes [Incapacitated] or [Dead] (your choice)."
+  },
+  "Decay Poison I": {
+    "rank": 2,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 30,
+    "description": "The target takes [Decay: 5]."
+  },
+  "Decay Poison II": {
+    "rank": 7,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 80,
+    "description": "The target takes [Decay: 5]."
   },
   "Dodge Salve I": {
     "rank": 7,
@@ -158,6 +278,26 @@
     "check": null,
     "price": 90,
     "description": "The target gains a +4 bonus to [Magic Defense]."
+  },
+  "Exhausting Poison I": {
+    "rank": 5,
+    "tags": ["Toxin", "Consumable", "Rare"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (3+2D vs Resistance)",
+    "price": 50,
+    "description": "The target takes [Fatigue: 20]."
+  },
+  "Exhausting Poison II": {
+    "rank": 10,
+    "tags": ["Toxin", "Consumable", "Rare"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 140,
+    "description": "The target takes [Fatigue: 25]."
   },
   "Explorer's Scroll I": {
     "rank": 2,
@@ -238,6 +378,26 @@
     "check": null,
     "price": 40,
     "description": "The target recovers 25 HP."
+  },
+  "Holy Water I": {
+    "rank": 1,
+    "tags": ["Toxin", "Consumable", "Holy"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 20,
+    "description": "Deal [1D] penetrating damage to the target. This damage always has the [Holy] tag, even if another effect would overwrite it."
+  },
+  "Holy Water II": {
+    "rank": 6,
+    "tags": ["Toxin", "Consumable", "Holy"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (6+2D vs Resistance)",
+    "price": 60,
+    "description": "Deal [3+1D] penetrating damage to the target. This damage always has the [Holy] tag, even if another effect would overwrite it."
   },
   "Iron Body Salve I": {
     "rank": 6,
@@ -539,6 +699,26 @@
     "price": 70,
     "description": "The target treats all Props with the [Magic] tag as if they had [Detection Difficulty: Automatic]. Treat this effect as a Combat Status. You take [Fatigue: (Base STR x 2)]. (CR15): This item has no effect."
   },
+  "Sealing Poison I": {
+    "rank": 1,
+    "tags": ["Toxin", "Consumable", "Rare"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (2+2D vs Resistance)",
+    "price": 20,
+    "description": "The target is unable to inflict Bad Statuses with its actions. Treat this effect as a Bad Status that is removed at the end of the target's next Main Process."
+  },
+  "Sealing Poison II": {
+    "rank": 6,
+    "tags": ["Toxin", "Consumable", "Rare"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (4+2D vs Resistance)",
+    "price": 60,
+    "description": "The target is unable to inflict Bad Statuses with its actions. Treat this effect as a Bad Status that is removed at the end of the target's next Main Process."
+  },
   "Skill Potion I": {
     "rank": 3,
     "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
@@ -608,6 +788,26 @@
     "check": null,
     "price": 140,
     "description": "Increase your number of Inventory Slots by +4."
+  },
+  "Trance Poison I": {
+    "rank": 1,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (3+2D vs Resistance)",
+    "price": 20,
+    "description": "The target takes [Dazed]."
+  },
+  "Trance Poison II": {
+    "rank": 6,
+    "tags": ["Toxin", "Consumable"],
+    "timing": "Major",
+    "target": "Single",
+    "range": "Close",
+    "check": "Opposed (5+2D vs Resistance)",
+    "price": 60,
+    "description": "The target takes [Dazed]."
   },
   "Unyielding Salve I": {
     "rank": 10,
