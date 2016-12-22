@@ -79,6 +79,10 @@
     "category": "Classification",
     "description": "Once you use it, it's gone."
   },
+  "Core Material": {
+    "category": null,
+    "description": null
+  },
   "Damaged": {
     "category": null,
     "description": "Broken or otherwise unusable, Damaged items cannot be used or equipped."
@@ -184,6 +188,18 @@
     "description": null
   },
   "Magic Catalyst 1": {
+    "category": null,
+    "description": null
+  },
+  "Magic Catalyst 2": {
+    "category": null,
+    "description": null
+  },
+  "Magic Catalyst 3": {
+    "category": null,
+    "description": null
+  },
+  "Magic Catalyst 4": {
     "category": null,
     "description": null
   },

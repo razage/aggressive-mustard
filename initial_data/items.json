@@ -49,6 +49,16 @@
     "price": 20,
     "description": "The target removes a [Decay] condition with a rating of 20 or less."
   },
+  "Arrow Bundle": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 5,
+    "description": null
+  },
   "Backpack": {
     "rank": 1,
     "tags": ["Bag"],
@@ -89,6 +99,16 @@
     "price": 50,
     "description": "Increase your number of Inventory Slots by +3."
   },
+  "Bear Paw": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 35,
+    "description": null
+  },
   "Beef Stew": {
     "rank": 1,
     "tags": ["Food", "Consumable", "Preparation"],
@@ -128,6 +148,26 @@
     "check": "Opposed (6+2D vs Resistance)",
     "price": 100,
     "description": "The target takes [Rigor]."
+  },
+  "Black Honey": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 35,
+    "description": null
+  },
+  "Black Mandible": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
   },
   "Boiled Mystery Bird": {
     "rank": 9,
@@ -209,6 +249,16 @@
     "price": 30,
     "description": "The target's [Fatigue] rating decreases by -8."
   },
+  "Crimson Lotus Stone": {
+    "rank": 2,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 40,
+    "description": null
+  },
   "Curse Poison I": {
     "rank": 1,
     "tags": ["Toxin", "Consumable", "Blight"],
@@ -279,6 +329,16 @@
     "price": 80,
     "description": "The target takes [Decay: 5]."
   },
+  "Delicate Wings": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
+  },
   "Dodge Salve I": {
     "rank": 7,
     "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
@@ -288,6 +348,26 @@
     "check": null,
     "price": 190,
     "description": "The target gains a +1 bonus to [Evasion]. (CR14): This item has no effect."
+  },
+  "Dull White Bone Dust": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 35,
+    "description": null
+  },
+  "Dusk Wings": {
+    "rank": 1,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
   },
   "Eagle Card I": {
     "rank": 8,
@@ -309,6 +389,16 @@
     "price": 40,
     "description": "Select one: [Flame] [Cold] [Shock] [Blight] [Holy] or [Spirit]. During the target's Main Process, they deal damage of the chosen tag. (CR11) This item has no effect."
   },
+  "Emerald Eye": {
+    "rank": 3,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": null
+  },
   "Enduring Magic Salve": {
     "rank": 6,
     "tags": ["Medicine", "Consumable", "Preparation"],
@@ -318,6 +408,16 @@
     "check": null,
     "price": 90,
     "description": "The target gains a +4 bonus to [Magic Defense]."
+  },
+  "Engraved Figurine": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 40,
+    "description": null
   },
   "Exhausting Poison I": {
     "rank": 5,
@@ -369,6 +469,46 @@
     "price": 10,
     "description": "The target's [Fatigue] rating decreases by -5."
   },
+  "Filthy Mucus": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Fire Catalyst": {
+    "rank": 2,
+    "tags": ["Magic Catalyst 2"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Fire Lizard Hide": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 45,
+    "description": null
+  },
+  "Fire Scales": {
+    "rank": 2,
+    "tags": ["Magic Catalyst 2"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
   "Fish Scales Gemstone I": {
     "rank": 2,
     "tags": ["Gem", "Consumable"],
@@ -418,6 +558,66 @@
     "check": "Basic (8+2D vs Enemy Identification)",
     "price": 130,
     "description": "This scroll targets the next scene. Compare your check result against the [Identification Difficulty] of each enemy appearing in the next scene. For each success, you learn the name and appearance of that enemy. You take [Fatigue: Base STR]. (Fumble): The enemy notices your scouting."
+  },
+  "Glittering Bone": {
+    "rank": 2,
+    "tags": ["Magic Catalyst 2"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Gloomshell": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Gloomweb": {
+    "rank": 3,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": null
+  },
+  "Gob Sword": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Golden Wheat": {
+    "rank": 1,
+    "tags": ["Magic Catalyst 1"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 15,
+    "description": null
+  },
+  "Gregarious Fragments": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
   },
   "Healing Card I": {
     "rank": 4,
@@ -469,6 +669,26 @@
     "price": 60,
     "description": "Deal [3+1D] penetrating damage to the target. This damage always has the [Holy] tag, even if another effect would overwrite it."
   },
+  "Howling Emblem": {
+    "rank": 1,
+    "tags": ["Magic Catalyst 2"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Hydromel": {
+    "rank": 1,
+    "tags": ["Magic Catalyst 1"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 15,
+    "description": null
+  },
   "Iron Body Salve I": {
     "rank": 6,
     "tags": ["Medicine", "Consumable", "Preparation"],
@@ -518,6 +738,26 @@
     "check": null,
     "price": 140,
     "description": "Increase your Hate by +1. The target gains a +1 bonus to [Speed]. Treat this effect as a Combat Status that lasts until the end of the round. (Fate 1): This effect lasts until the end of the scene instead. (CR18): This item has no effect."
+  },
+  "Kobold Fang": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 10,
+    "description": null
+  },
+  "Large Stinger": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
   },
   "Life-Calling Jewel I": {
     "rank": 1,
@@ -579,6 +819,16 @@
     "price": 150,
     "description": "When the target appears in the next scene, they will have the [Hidden] status. You take [Fatigue: (Base STR x 2)]. (CR18): This item has no effect."
   },
+  "Medal of Bonds": {
+    "rank": 1,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
+  },
   "Mini-Pouch": {
     "rank": 1,
     "tags": ["Bag", "Accessory"],
@@ -599,6 +849,36 @@
     "price": 50,
     "description": "Increase your Hate by +1. The target gains [Flight]. Treat this effect as a Combat Status. (CR13): This item has no effect."
   },
+  "Nephrite Necklace": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 110,
+    "description": null
+  },
+  "Obsidian Bone": {
+    "rank": 2,
+    "tags": ["Magic Catalyst 2"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 25,
+    "description": null
+  },
+  "Officer's Mark": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 120,
+    "description": null
+  },
   "Onigiri": {
     "rank": 5,
     "tags": ["Food", "Consumable", "Preparation"],
@@ -618,6 +898,16 @@
     "check": null,
     "price": 35,
     "description": "The target removes any two Bad Statuses currently affecting them. (CR11): This item has no effect."
+  },
+  "Pelt of the Mad Bear": {
+    "rank": 2,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 40,
+    "description": null
   },
   "Physical Card I": {
     "rank": 3,
@@ -688,6 +978,26 @@
     "check": null,
     "price": 45,
     "description": "The target gains [Regen: 5]."
+  },
+  "Richly-Colored Stone": {
+    "rank": 1,
+    "tags": ["Magic Catalyst 1"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 15,
+    "description": null
+  },
+  "Rusted Hatchet": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
   },
   "Scroll of Acceleration I": {
     "rank": 3,
@@ -849,6 +1159,36 @@
     "price": 60,
     "description": "The target is unable to inflict Bad Statuses with its actions. Treat this effect as a Bad Status that is removed at the end of the target's next Main Process."
   },
+  "Shadow Talisman": {
+    "rank": 3,
+    "tags": ["Core Material"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 50,
+    "description": null
+  },
+  "Shadowblade Shard": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 180,
+    "description": null
+  },
+  "Shiny Shadowstone": {
+    "rank": 3,
+    "tags": ["Magic Catalyst 4"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
+  },
   "Skill Potion I": {
     "rank": 3,
     "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
@@ -879,6 +1219,26 @@
     "price": 40,
     "description": "During this Main Process, the target gains a +2D bonus to [Weapon Attack] damage rolls. The effect of multiple Slash Cards (regardless of rank) do not stack."
   },
+  "Smashed Necklace": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 15,
+    "description": null
+  },
+  "Spiky Tail": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
+  },
   "Standard Curry": {
     "rank": 10,
     "tags": ["Food", "Consumable", "Preparation"],
@@ -888,6 +1248,26 @@
     "check": null,
     "price": 130,
     "description": "The target's [Fatigue] rating decreases by -40."
+  },
+  "Straw Bundle": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
+  "Supple Vine": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 10,
+    "description": null
   },
   "Three-Egg Fried Rice": {
     "rank": 7,
@@ -959,6 +1339,16 @@
     "price": 70,
     "description": "This item targets everything in range that has a [Detection Difficulty]. The target removes [Concealed] or [Hidden]. You do not have to apply this effect to your allies."
   },
+  "Twisted Staff": {
+    "rank": 3,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
   "Unyielding Salve I": {
     "rank": 10,
     "tags": ["Medicine", "Consumable", "Preparation"],
@@ -969,6 +1359,16 @@
     "price": 190,
     "description": "The target gains [Cancel: 5]."
   },
+  "Vibrant Feathers": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 20,
+    "description": null
+  },
   "Warding Salve I": {
     "rank": 7,
     "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
@@ -978,6 +1378,16 @@
     "check": null,
     "price": 190,
     "description": "The target gains a +1 bonus to [Resistance]. (CR14): This item has no effect."
+  },
+  "Warped Heart": {
+    "rank": 2,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 130,
+    "description": null
   },
   "Water Breathing Potion I": {
     "rank": 3,
@@ -1008,5 +1418,15 @@
     "check": null,
     "price": 40,
     "description": "When the target next applies a [Barrier], increase the rating of that [Barrier] by +2D. The effect of multiple White Constructs (regardless of rank) do not stack, and this effect is removed after being applied once, or at the end of the scene."
+  },
+  "Zombie Meat": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 10,
+    "description": null
   }
 }
