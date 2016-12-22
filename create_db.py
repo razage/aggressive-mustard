@@ -18,6 +18,7 @@ db.session.commit()
 exports = OrderedDict([
     ("tags", Path(join(app.config['BASEDIR'], "initial_data", "tags.json"))),
     ("items", Path(join(app.config['BASEDIR'], "initial_data", "items.json"))),
+    ("weapons", Path(join(app.config['BASEDIR'], "initial_data", "weapons.json"))),
     ("classes", Path(join(app.config['BASEDIR'], "initial_data", "classes.json"))),
     ("races", Path(join(app.config['BASEDIR'], "initial_data", "races.json"))),
     ("servers", Path(join(app.config['BASEDIR'], "initial_data", "servers.json"))),
@@ -49,6 +50,20 @@ for f in exports.items():
             db.session.add(_item)
             db.session.commit()
 
+    elif f[0] == "weapons" and f[1].is_file():
+        weapons = load(open(str(f[1])), object_pairs_hook=OrderedDict)
+
+        for w in weapons.items():
+            _data = w[1]
+            _weapon = Weapon(w[0], _data['rank'], _data['attack'], _data['magic'], _data['accuracy'], _data['initiative'], _data['range'], _data['price'], _data['description'])
+
+            if _data['tags'] is not None:
+                for tag in _data['tags']:
+                    _weapon.tags.append(Tag.query.filter(Tag.name == tag).one())
+
+            db.session.add(_weapon)
+            db.session.commit()
+            
     elif f[0] == "classes" and f[1].is_file():
         classes = load(open(str(f[1])), object_pairs_hook=OrderedDict)
 
