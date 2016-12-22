@@ -1,6 +1,6 @@
 from flask import Blueprint, redirect, render_template, url_for
 
-from am.models import db
+from am import db
 from .forms import AbilityForm, EnemyForm
 from .models import Ability, Enemy
 from am.tags.models import Tag
