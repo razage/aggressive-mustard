@@ -525,7 +525,71 @@
   "Goblin Skater": {},
   "Goblin Sniper": {},
   "Goblin Totem": {},
-  "Gray Pudding": {},
+  "Gray Pudding": {
+    "type": "Standard",
+    "tags": ["Construct"],
+    "rank": 1,
+    "STR": 2,
+    "DEX": 1,
+    "POW": 1,
+    "INT": 1,
+    "HP": 60,
+    "initiative": 1,
+    "speed": 0,
+    "evasion": "1+2D",
+    "phys_def": 6,
+    "resistance": "1+2D",
+    "mag_def": 2,
+    "id_diff": 7,
+    "hate_multi": 1,
+    "fate_points": 0,
+    "abilities": {
+      "Amorphous Body": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "Whenever this enemy takes [Cold] damage, it also takes [Afflicted] and [Dazed]. This enemy's [Normal Moves] are always [Safe Moves]."
+      },
+      "Coat & Digest": {
+        "attack_type": "Melee Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (4+2D vs Evasion)",
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Deal [15+2D] magical damage to the target, and the target takes [Dazed]. (Target: Engulfed): The damage is penetrating."
+      },
+      "Devour": {
+        "attack_type": "Cleanup",
+        "tags": null,
+        "timing": "Automatic",
+        "check": null,
+        "target": "Single",
+        "range": "Close",
+        "limit": null,
+        "description": "Select a target with [Dazed]. The target gains the [Engulfed] tag. Treat this effect as a Bad Status that is only removed once the target and this enemy are not in the same square."
+      }
+    },
+    "loot": {
+      "1~4": {
+        "item": "Antidote I",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "5~6": {
+        "item": "Slimey Core",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
+    }
+  },
   "Green Slime": {
     "type": "Mob",
     "tags": ["Construct"],
@@ -1371,6 +1435,14 @@
         "range": null,
         "limit": "1/Scene",
         "description": "Use this skill when the [Hate Top] character is outside [Range: Close]. This enemy may make a [Safe Move] up to 3 Sq. (Fate 1): If you have reached your limit for this skill, you may pay this cost to use it again."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Rat Tail",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },

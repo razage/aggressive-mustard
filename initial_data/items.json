@@ -969,6 +969,14 @@
     "price": 170,
     "description": "During the target's current Main Process, the target receives an extra minor action. The effect of multiple Quick Cards (regardless of rank) do not stack. (CR17): This item has no effect."
   },
+  "Rat Tail": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "target": null,
+    "range": null,
+    "price": 10,
+    "description": null
+  },
   "Regen Potion I": {
     "rank": 1,
     "tags": ["Medicine", "Consumable", "Rare", "Preparation"],
@@ -1218,6 +1226,16 @@
     "check": null,
     "price": 40,
     "description": "During this Main Process, the target gains a +2D bonus to [Weapon Attack] damage rolls. The effect of multiple Slash Cards (regardless of rank) do not stack."
+  },
+  "Slimey Core": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
   },
   "Smashed Necklace": {
     "rank": 2,
