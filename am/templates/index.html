@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
     <p>Welcome to the currently titled "Aggressive Mustard": A Log Horizon Tabletop Roleplaying Game resource. Currently this resource exists primarly as a database, but eventually there will be extensive user tools as well.</p>
-    <p>Links</p>
+    <h2>Enemies</h2>
+    <ul>
+        <li><a href="{{ url_for('enemies.enemy_index') }}">Enemy Index</a></li>
+        <li><a href="{{ url_for('enemies.create_enemy') }}">Create Enemy</a></li>
+    </ul>
+    <h2>Items</h2>
+    <ul>
+        <li><a href="{{ url_for('items.create_weapon') }}">Create Weapon</a></li>
+    </ul>
+    <h2>Tags</h2>
     <ul>
         <li><a href="{{ url_for('tags.tag_index') }}">Tag Index</a></li>
-        <li><a href="{{ url_for('enemies.create_enemy') }}">Create Enemy</a></li>
-        <li><a href="{{ url_for('items.create_weapon') }}">Create Weapon</a></li>
     </ul>
 {% endblock %}
