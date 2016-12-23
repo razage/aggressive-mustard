@@ -109,6 +109,20 @@
         "limit": null,
         "description": "Use this skill when the target uses a skill with the [Movement] tag. The target takes [Decay: 3]."
       }
+    },
+    "loot": {
+      "1~3": {
+        "item": "Large Stinger",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "4~6": {
+        "item": "Black Honey",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Bambooshoot Boar": {},
@@ -150,6 +164,20 @@
         "range": "4 Sq.",
         "limit": "1/Scene",
         "description": "Use this skill on another enemy when it would deal HP damage. Increase the damage by +10."
+      }
+    },
+    "loot": {
+      "1~3": {
+        "item": null,
+        "table": null,
+        "gold": "2D",
+        "quantity": 2
+      },
+      "4~6": {
+        "item": "Spiky Tail",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -327,6 +355,14 @@
         "range": "4 Sq.",
         "limit": null,
         "description": "Deal [23+2D] magical damage. This skill cannot be used against the same target in consecutive rounds. (Effect): At the end of the current Main Process, the target makes a [Teleport] to the same square as this enemy."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Fire Catalyst",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -633,6 +669,14 @@
         "limit": "1/Scene",
         "description": "This enemy may make a [Safe Move] of 1 Sq. During this movement, the enemy can move diagonally. (Minor): Increase the distance moved by +1 Sq."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Kobold Fang",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Kobold Caster": {
@@ -683,6 +727,20 @@
         "range": null,
         "limit": "1/Scene",
         "description": "This enemy gains a +10 bonus to the damage roll of a [Magic Attack]."
+      }
+    },
+    "loot": {
+      "1": {
+        "item": "Elm Staff",
+        "table": "weapons",
+        "gold": null,
+        "quantity": 1
+      },
+      "2~6": {
+        "item": "Richly-Colored Stone",
+        "table": "items",
+        "gold": null,
+        "quantity": 2
       }
     }
   },
@@ -938,6 +996,20 @@
         "limit": "1/Scene",
         "description": "This enemy becomes [Hidden]. (Minor): The enemy can make a [Safe Move] up to 2 Sq. without losing [Hidden]."
       }
+    },
+    "loot": {
+      "1~5": {
+        "item": "Hydromel",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "6": {
+        "item": "Dusk Wings",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Player Killer Samurai": {
@@ -1121,6 +1193,14 @@
         "limit": null,
         "description": "Deal [20+2D] physical damage, and the target takes [Pursuit: 5]. (Target: Pursuit): The [Pursuit] stack this attack triggered is not removed."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Arrow Bundle",
+        "table": "items",
+        "gold": null,
+        "quantity": 3
+      }
     }
   },
   "Salamander": {
@@ -1172,6 +1252,20 @@
         "limit": "1/Scene",
         "description": "During this Main Process, this enemy's [Magic Attack] can be used with [Target: Wide 1 (P)]."
       }
+    },
+    "loot": {
+      "1~4": {
+        "item": "Fire Scales",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "5~6": {
+        "item": "Fire Lizard Hide",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Scarecrow": {
@@ -1222,6 +1316,20 @@
         "range": null,
         "limit": "1/Scene",
         "description": "(Self: Hidden): During this enemy's Main Process, it gains a +2D bonus to [Attack Rolls] of [Ranged Attacks]."
+      }
+    },
+    "loot": {
+      "1~4": {
+        "item": "Straw Bundle",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "5~6": {
+        "item": "Golden Wheat",
+        "table": "items",
+        "gold": null,
+        "quantity": 2
       }
     }
   },
@@ -1418,6 +1526,14 @@
         "limit": null,
         "description": "This enemy may make a [Safe Move] up to 2 Sq."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Supple Vine",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "White Forest Tiger": {},
@@ -1470,6 +1586,14 @@
         "range": null,
         "limit": "1/Scene",
         "description": "This enemy gains a +5 bonus to the damage roll of a [Melee Attack]. (Target: Rigor): The bonus is +15 instead."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Zombie Meat",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   }

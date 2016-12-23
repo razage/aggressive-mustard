@@ -67,8 +67,8 @@
         </tr>
         {% for loot in enemy.loot %}
             <tr>
-                <td width="17%">-</td>
-                <td colspan="5">{% if loot.item.name is defined %}{{ loot.item.name }}{% else %}-{% endif %}</td>
+                <td>{{ loot.roll }}</td>
+                <td colspan="5">{% if loot.item.name is defined %}{{ loot.item.name }}{% elif loot.weapon.name is defined %}{{ loot.weapon.name }}{% elif loot.gold is defined %}{{ loot.gold }}{% else %}-{% endif %}{% if loot.quantity > 1 %} x{{ loot.quantity }}{% endif %}</td>
             </tr>
         {% endfor %}
         </tbody>

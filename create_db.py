@@ -63,7 +63,7 @@ for f in exports.items():
 
             db.session.add(_weapon)
             db.session.commit()
-            
+
     elif f[0] == "classes" and f[1].is_file():
         classes = load(open(str(f[1])), object_pairs_hook=OrderedDict)
 
@@ -119,7 +119,20 @@ for f in exports.items():
 
                     enemy.abilities.append(a)
 
+                if 'loot' in _stats:
+                    for loot in _stats['loot'].items():
+                        _data = loot[1]
+                        l = LootTable(loot[0], _data['quantity'], _data['gold'])
+
+                        if _data['table'] == "items":
+                            l.item = Item.query.filter(Item.name == _data['item']).one()
+                        elif _data['table'] == "weapons":
+                            l.weapon = Weapon.query.filter(Weapon.name == _data['item']).one()
+
+                        enemy.loot.append(l)
+
                 db.session.add(enemy)
                 db.session.commit()
+
             else:
                 continue

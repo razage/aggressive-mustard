@@ -9,3 +9,4 @@ am/static/.webassets-cache
 # specific files
 initial_data/tags.txt
 database.db
+database.db-journal
