@@ -7,7 +7,7 @@ from sqlalchemy.orm.exc import NoResultFound
 
 from am import app, db
 from am.classes.models import AlternateName, Class
-from am.enemies.models import Ability, Enemy, LootTable
+from am.enemies.models import Ability, Enemy, LootDrop
 from am.items.models import Item, Weapon
 from am.races.models import Race
 from am.tags.models import Tag
@@ -55,7 +55,8 @@ for f in exports.items():
 
         for w in weapons.items():
             _data = w[1]
-            _weapon = Weapon(w[0], _data['rank'], _data['attack'], _data['magic'], _data['accuracy'], _data['initiative'], _data['range'], _data['price'], _data['description'])
+            _weapon = Weapon(w[0], _data['rank'], _data['attack'], _data['magic'], _data['accuracy'],
+                             _data['initiative'], _data['range'], _data['price'], _data['description'])
 
             if _data['tags'] is not None:
                 for tag in _data['tags']:
@@ -122,7 +123,7 @@ for f in exports.items():
                 if 'loot' in _stats:
                     for loot in _stats['loot'].items():
                         _data = loot[1]
-                        l = LootTable(loot[0], _data['quantity'], _data['gold'])
+                        l = LootDrop(loot[0], _data['quantity'], _data['gold'])
 
                         if _data['table'] == "items":
                             l.item = Item.query.filter(Item.name == _data['item']).one()

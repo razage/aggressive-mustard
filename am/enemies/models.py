@@ -3,6 +3,10 @@ from am.models import Attributes, BaseModel
 
 enemy_ability = db.Table("enemy ability", db.Column("enemy_id", db.Integer, db.ForeignKey("enemies.id")),
                          db.Column("ability_id", db.Integer, db.ForeignKey("abilities.id")))
+
+enemy_loot = db.Table("enemy loot", db.Column("enemy_id", db.Integer, db.ForeignKey("enemies.id")),
+                      db.Column("loot_drop_id", db.Integer, db.ForeignKey("loot drops.id")))
+
 enemy_tags = db.Table("enemy tags", db.Column("enemy_id", db.Integer, db.ForeignKey("enemies.id")),
                       db.Column("tag_id", db.Integer, db.ForeignKey("tags.id")))
 
@@ -30,18 +34,16 @@ class Ability(BaseModel):
         self.description = description
 
 
-class LootTable(BaseModel):
-    __tablename__ = "loot tables"
-    enemy_id = db.Column(db.Integer, db.ForeignKey("enemies.id"))
+class LootDrop(BaseModel):
+    __tablename__ = "loot drops"
     roll = db.Column(db.String(3), nullable=True)
     item_id = db.Column(db.Integer, db.ForeignKey("items.id"), nullable=True)
     weapon_id = db.Column(db.Integer, db.ForeignKey("weapons.id"), nullable=True)
     quantity = db.Column(db.Integer, default=1)
     gold = db.Column(db.String(16), nullable=True)
 
-    enemy = db.relationship("Enemy", backref="loot")
-    item = db.relationship("Item", backref="item_dropped_by")
-    weapon = db.relationship("Weapon", backref="weapon_dropped_by")
+    item = db.relationship("Item", backref="item_dropped_by", foreign_keys=item_id)
+    weapon = db.relationship("Weapon", backref="weapon_dropped_by", foreign_keys=weapon_id)
 
     def __init__(self, roll=None, quantity=1, gold=None):
         self.roll = roll
@@ -67,6 +69,7 @@ class Enemy(BaseModel, Attributes):
     enemy_type = db.relationship("Tag", backref="enemies_of_type", foreign_keys=type_id)
     tags = db.relationship("Tag", secondary=enemy_tags)
     abilities = db.relationship("Ability", secondary=enemy_ability)
+    loot = db.relationship("LootDrop", secondary=enemy_loot)
 
     def __init__(self, name, STR, DEX, POW, INT, HP, rank, initiative, speed, evasion, phys_def, resistance, mag_def,
                  id_diff, hate_multi=2, fate_points=0):

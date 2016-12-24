@@ -972,8 +972,10 @@
   "Rat Tail": {
     "rank": 1,
     "tags": ["Valuable"],
+    "timing": null,
     "target": null,
     "range": null,
+    "check": null,
     "price": 10,
     "description": null
   },

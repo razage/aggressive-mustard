@@ -16,6 +16,8 @@ def enemy_index():
 
 @mod.route("/<int:enemy_id>")
 def view_enemy(enemy_id):
+    # from .schemas import EnemySchema NOTE: If this is at the top, SQLAlchemy stops working.
+
     e = Enemy.query.get_or_404(enemy_id)
     return render_template("enemies/enemy_view.html", title=e.name, enemy=e)
 
