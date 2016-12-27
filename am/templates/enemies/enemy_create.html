@@ -1,25 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-    <form role="form" method="post" action="{{ url_for('enemies.create_enemy') }}">
+    <form role="form" id="create_enemy" method="post" action="{{ url_for('enemies.create_enemy') }}">
         {{ form.csrf_token }}
-        <p>{{ form.name.label }}: {{ form.name }}</p>
-        <p>{{ form.tags.label }}: {{ form.tags }}</p>
-        <p>{{ form.e_type.label }}: {{ form.e_type }}</p>
-        <p>{{ form.rank.label }}: {{ form.rank }}</p>
-        <p>{{ form.strength.label }}: {{ form.strength }}</p>
-        <p>{{ form.dexterity.label }}: {{ form.dexterity }}</p>
-        <p>{{ form.power.label }}: {{ form.power }}</p>
-        <p>{{ form.intelligence.label }}: {{ form.intelligence }}</p>
-        <p>{{ form.health_points.label }}: {{ form.health_points }}</p>
-        <p>{{ form.initiative.label }}: {{ form.initiative }}</p>
-        <p>{{ form.speed.label }}: {{ form.speed }}</p>
-        <p>{{ form.evasion.label }}: {{ form.evasion }}</p>
-        <p>{{ form.resistance.label }}: {{ form.resistance }}</p>
-        <p>{{ form.phys_def.label }}: {{ form.phys_def }}</p>
-        <p>{{ form.mag_def.label }}: {{ form.mag_def }}</p>
-        <p>{{ form.id_diff.label }}: {{ form.id_diff }}</p>
-        <p>{{ form.hate_multi.label }}: {{ form.hate_multi }}</p>
-        <p>{{ form.fate_points.label }}: {{ form.fate_points }}</p>
-        <button type="submit">Submit</button>
+        <table class="statblock">
+            <thead>
+                <tr>
+                    <td class="inverted centered" colspan="6">{{ form.name.label }}: {{ form.name }}</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="centered" width="17%">{{ form.e_type.label }}: {{ form.e_type }}</td>
+                    <td class="centered" width="16%">{{ form.tags.label }}: {{ form.tags }}</td>
+                    <td class="centered" width="16%">{{ form.tags.label }}: {{ form.tags }}</td>
+                    <td class="centered" width="16%">{{ form.tags.label }}: {{ form.tags }}</td>
+                    <td class="centered" width="16%">{{ form.tags.label }}: {{ form.tags }}</td>
+                    <td class="centered" width="17%">{{ form.tags.label }}: {{ form.tags }}</td>
+                </tr>
+                <tr>
+                    <td class="inverted">{{ form.rank.label }}</td>
+                    <td>{{ form.rank }}</td>
+                    <td class="inverted">{{ form.strength.label }}</td>
+                    <td>{{ form.strength }}</td>
+                    <td class="inverted">{{ form.evasion.label }}</td>
+                    <td>{{ form.evasion }}</td>
+                </tr>
+            <tr>
+                <td class="inverted">{{ form.health_points.label }}</td>
+                <td>{{ form.health_points }}</td>
+                <td class="inverted">{{ form.dexterity.label }}</td>
+                <td>{{ form.dexterity }}</td>
+                <td class="inverted">{{ form.resistance.label }}</td>
+                <td>{{ form.resistance }}</td>
+            </tr>
+            <tr>
+                <td class="inverted">{{ form.initiative.label }}</td>
+                <td>{{ form.initiative }}</td>
+                <td class="inverted">{{ form.power.label }}</td>
+                <td>{{ form.power }}</td>
+                <td class="inverted">{{ form.phys_def.label }}</td>
+                <td>{{ form.phys_def }}</td>
+            </tr>
+            <tr>
+                <td class="inverted">{{ form.speed.label }}</td>
+                <td>{{ form.speed }}</td>
+                <td class="inverted">{{ form.intelligence.label }}</td>
+                <td>{{ form.intelligence }}</td>
+                <td class="inverted">{{ form.mag_def.label }}</td>
+                <td>{{ form.mag_def }}</td>
+            </tr>
+            <tr>
+                <td class="inverted" colspan="2">{{ form.id_diff.label }}</td>
+                <td>{{ form.id_diff }}</td>
+                <td class="inverted" colspan="2">{{ form.hate_multi.label }}</td>
+                <td>{{ form.hate_multi }}</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="inverted centered">Drop Items</td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="submit">Create</button>
     </form>
 {% endblock %}

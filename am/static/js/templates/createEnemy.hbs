@@ -1,0 +1,21 @@
+<table class="statblock">
+  <form role="form" method="post">
+  <thead>
+    <tr>
+      <td colspan="6"><label for="eName">Enemy Name</label>: <input id="eName" type="text" name="eName"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <label for="eType">Enemy Type</label>:
+        <select id="eType" name="eType">
+          {{#each eTypes}}
+            <option value="{{id}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </td>
+    </tr>
+  </tbody>
+  </form>
+</table>

@@ -5,6 +5,8 @@
 .idea/
 __pycache__/
 am/static/.webassets-cache
+am/static/bower_components
+node_modules/
 
 # specific files
 initial_data/tags.txt

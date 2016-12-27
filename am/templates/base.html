@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      {% assets "scss_all" %}
-        <link rel="stylesheet" href="{{ ASSET_URL }}">
-      {% endassets %}
-      <meta charset="UTF-8">
-      <title>{{ title }}</title>
+    {% assets "scss_all" %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ title }}</title>
   </head>
   <body>
-      <div class="content">
-          {% block content %}
-          {% endblock %}
-      </div>
+    {% include "navbar.html" %}
+    <div class="form-lightbox">
+      <p>test</p>
+    </div>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='bower_components/requirejs/require.js') }}" data-main="{{ url_for('static', filename='js/config') }}"></script>
   </body>
-  <footer>
 </html>
