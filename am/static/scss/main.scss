@@ -13,6 +13,10 @@ html {
   background: #FF00FF;
   margin: 0 auto;
   z-index: 1000;
+
+  .statblock {
+    border: 0;
+  }
 }
 
 .content {
@@ -25,7 +29,7 @@ html {
 }
 
 .statblock {
-  width: 75%;
+  width: 100%;
   border: 1px solid;
 
   /* CSS sorcery for special styling when there are 6+ children */

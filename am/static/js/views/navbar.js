@@ -2,8 +2,7 @@ define([
   'jquery',
   'backbone',
   'views/enemyCreate',
-  'bootstrap',
-  'backbone-forms'
+  'bootstrap'
 ], function($, Backbone, EnemyCreateView) {
   var NavbarView = Backbone.View.extend({
     el: "ul.navbar-nav",
