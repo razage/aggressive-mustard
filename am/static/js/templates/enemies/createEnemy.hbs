@@ -1,0 +1,64 @@
+<form id="createEnemyForm" role="form" method="post" action="/enemies/create">
+  <table class="statblock">
+    <thead>
+      <tr>
+        <td class="inverted centered" colspan="6"><label for="eName">Enemy Name</label>: <input id="eName" type="text" name="eName"></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="centered">
+          <select class="form-control" id="eType" name="eType">
+            {{#each eTypes}}
+              <option{{#if @first}} selected{{/if}} value="{{id}}">{{name}}</option>
+            {{/each}}
+          </select>
+        </td>
+        <td class="centered"><input class="form-control" type="text" name="tags" placeholder="tag"></td>
+        <td class="centered"><input class="form-control" type="text" name="tags" placeholder="tag"></td>
+        <td class="centered"><input class="form-control" type="text" name="tags" placeholder="tag"></td>
+        <td class="centered"><input class="form-control" type="text" name="tags" placeholder="tag"></td>
+        <td class="centered"><input class="form-control" type="text" name="tags" placeholder="tag"></td>
+      </tr>
+      <tr>
+        <td class="inverted"><label for="rank">Rank</label>:</td>
+        <td><input class="form-control" id="rank" type="text" name="rank"></td>
+        <td class="inverted"><label for="strength">Strength</label>:</td>
+        <td><input class="form-control" id="strength" type="text" name="strength"></td>
+        <td class="inverted"><label for="evasion">Evasion</label>:</td>
+        <td><input class="form-control" id="evasion" type="text" name="evasion"></td>
+      </tr>
+      <tr>
+        <td class="inverted"><label for="health">Health</label>:</td>
+        <td><input class="form-control" id="health" type="text" name="health"></td>
+        <td class="inverted"><label for="dexterity">Dexterity</label>:</td>
+        <td><input class="form-control" id="dexterity" type="text" name="dexterity"></td>
+        <td class="inverted"><label for="resistance">Resistance</label>:</td>
+        <td><input class="form-control" id="resistance" type="text" name="resistance"></td>
+      </tr>
+      <tr>
+        <td class="inverted"><label for="initiative">Initiative</label>:</td>
+        <td><input class="form-control" id="initiative" type="text" name="initiative"></td>
+        <td class="inverted"><label for="power">Power</label>:</td>
+        <td><input class="form-control" id="power" type="text" name="power"></td>
+        <td class="inverted"><label for="physDef">Phys Def</label>:</td>
+        <td><input class="form-control" id="physDef" type="text" name="physDef"></td>
+      </tr>
+      <tr>
+        <td class="inverted"><label for="speed">Speed</label>:</td>
+        <td><input class="form-control" id="speed" type="text" name="speed"></td>
+        <td class="inverted"><label for="intelligence">Intelligence</label>:</td>
+        <td><input class="form-control" id="intelligence" type="text" name="intelligence"></td>
+        <td class="inverted"><label for="magDef">Mag Def</label>:</td>
+        <td><input class="form-control" id="magDef" type="text" name="magDef"></td>
+      </tr>
+      <tr>
+        <td class="inverted" colspan="2"><label for="idDiff">ID Difficulty</label>:</td>
+        <td><input class="form-control" id="idDiff" type="text" name="idDiff"></td>
+        <td class="inverted" colspan="2"><label for="hateMulti">Hate Multiplier</label></td>
+        <td><input class="form-control" id="hateMulti" type="text" name="hateMulti"></td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="submitButton" class="btn btn-success" type="submit">Create Enemy</button>
+</form>

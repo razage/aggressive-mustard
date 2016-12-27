@@ -15,7 +15,8 @@ require.config({
         "jquery": "../bower_components/jquery/dist/jquery.min",
         "bootstrap": "../bower_components/bootstrap/dist/js/bootstrap.min",
         "backbone": "../bower_components/backbone/backbone-min",
-        "hbs": "../bower_components/require-handlebars-plugin/hbs"
+        "hbs": "../bower_components/require-handlebars-plugin/hbs",
+        "validate": "../bower_components/jquery-validation/dist/jquery.validate.min"
     }
 });
 

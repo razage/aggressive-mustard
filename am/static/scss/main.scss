@@ -16,6 +16,10 @@ html {
 
   .statblock {
     border: 0;
+
+    input, .form-control {
+      color: $black;
+    }
   }
 }
 
