@@ -58,6 +58,14 @@
         "limit": null,
         "description": "Use this skill before an enemy other than this one would take HP Damage from an attack. This enemy takes the damage instead, and the target is unaffected by the attack. In addition, the character who made the attack takes 15 direct damage, and afterwards, this enemy becomes [Dead]."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Gloomshell",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Assassin Bee": {
@@ -260,6 +268,26 @@
         "limit": null,
         "description": "This skill can only target characters who have Combat Statuses. The target takes [(# of Combat Status on the Target) x 3] points of direct damage."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Crimson Lotus Stone",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "1~3": {
+        "item": "Obsidian Bone",
+        "table": "items",
+        "gold": null,
+        "quantity": 4
+      },
+      "4~6": {
+        "item": "Warped Heart",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Clockwork Dragonfly": {
@@ -310,6 +338,20 @@
         "range": null,
         "limit": "1/Scene",
         "description": "This enemy gains a +10 bonus to damage rolls of [Ranged Attacks]."
+      }
+    },
+    "loot": {
+      "1~5": {
+        "item": "Delicate Wings",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "6": {
+        "item": "Emerald Eye",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -415,6 +457,20 @@
         "limit": null,
         "description": "Use when this enemy becomes [Incapacitated]. The character that made this enemy [Incapacitated] takes 15 direct damage."
       }
+    },
+    "loot": {
+      "1~5": {
+        "item": "Black Mandible",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "6": {
+        "item": "Gloomweb",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Goblin": {
@@ -465,6 +521,14 @@
         "range": null,
         "limit": null,
         "description": "This enemy makes a [Safe Move] up to 2 Sq. (Minor): Increase the distance moved by +1 Sq."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Gob Sword",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -519,6 +583,20 @@
         "range": null,
         "limit": "1/Scene",
         "description": "During this Main Process, this enemy's [Magic Attacks] use [Target: Wide 1 (P)]."
+      }
+    },
+    "loot": {
+      "1~5": {
+        "item": "Twisted Staff",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "6": {
+        "item": "Nephrite Necklace",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -639,6 +717,14 @@
         "limit": "1/Scene",
         "description": "This enemy becomes [Hidden], then makes a [Safe Move] up to 2 Sq. without losing [Hidden]. (Minor): Increase the distance moved by +1 Sq."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Filthy Mucus",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Gregarious Asphyxmoss": {
@@ -679,6 +765,14 @@
         "range": "Close",
         "limit": null,
         "description": "This skill cannot target the Gregarious Asphyxmoss. Deal [30+2D] magical damage. (Result 16): The target takes [Decay: 6]."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Gregarious Fragments",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -879,6 +973,26 @@
         "limit": null,
         "description": "Use this skill on a character with [Hate Top]. The target takes [Pursuit: 5]."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Medal of Bonds",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "1~4": {
+        "item": "Howling Emblem",
+        "table": "items",
+        "gold": null,
+        "quantity": 4
+      },
+      "5~6": {
+        "item": "Officer's Mark",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Kobold Medic": {},
@@ -964,6 +1078,26 @@
         "range": null,
         "limit": null,
         "description": "The target takes 10 direct damage. The target's Hate increases by +2, and they remove 1 Combat Status (GM's Choice). (Fate 1): This enemy becomes [Hidden]."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Shadow Talisman",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "1~4": {
+        "item": "Shiny Shadowstone",
+        "table": "items",
+        "gold": null,
+        "quantity": 4
+      },
+      "5~6": {
+        "item": "Shadowblade Shard",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -1115,6 +1249,20 @@
         "limit": null,
         "description": "Use this skill when an enemy other than this one makes an attack. The target of that attack takes 10 direct damage."
       }
+    },
+    "loot": {
+      "1~5": {
+        "item": null,
+        "table": null,
+        "gold": "2Dx3",
+        "quantity": null
+      },
+      "6": {
+        "item": "Engraved Figurine",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Player Killer Swashbuckler": {
@@ -1156,6 +1304,20 @@
         "limit": "1/Scene",
         "description": "This enemy gains [Flying] and makes a [Safe Move] up to 3 Sq. At the end of the movement, the enemy loses [Flying]. (Minor): Increase the distance moved by +1 Sq."
       }
+    },
+    "loot": {
+      "1~5": {
+        "item": null,
+        "table": null,
+        "gold": "2Dx2",
+        "quantity": null
+      },
+      "6": {
+        "item": "Crescent Burger",
+        "table": "items",
+        "gold": null,
+        "quantity": 3
+      }
     }
   },
   "Poison Giant": {},
@@ -1164,7 +1326,71 @@
   "Ratman Harvester": {},
   "Ratman Hooligan": {},
   "Ratman Meanness": {},
-  "Ratman Minion": {},
+  "Ratman Minion": {
+    "type": "Standard",
+    "tags": ["Humanoid", "Ratman", "Night Vision"],
+    "rank": 1,
+    "STR": 1,
+    "DEX": 1,
+    "POW": 2,
+    "INT": 2,
+    "HP": 30,
+    "initiative": 2,
+    "speed": 2,
+    "evasion": "1+2D",
+    "phys_def": 6,
+    "resistance": "0+2D",
+    "mag_def": 5,
+    "id_diff": 7,
+    "hate_multi": 2,
+    "fate_points": 0,
+    "abilities": {
+      "Rat-Fu": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Constant",
+        "check": null,
+        "target": null,
+        "range": null,
+        "limit": null,
+        "description": "This enemy's [Normal Moves] always count as [Safe Moves]."
+      },
+      "Rat Shot": {
+        "attack_type": "Ranged Attack",
+        "tags": null,
+        "timing": "Major",
+        "check": "Opposed (2+3D vs Evasion)",
+        "target": "Single",
+        "range": "3 Sq.",
+        "limit": null,
+        "description": "Deal [22+2D] physical damage to the target. (Minor): The target takes [Decay: 5]."
+      },
+      "Rat Shield": {
+        "attack_type": null,
+        "tags": null,
+        "timing": "Refer",
+        "check": null,
+        "target": "Single",
+        "range": "4 Sq.",
+        "limit": null,
+        "description": "Use this skill when the target becomes [Incapacitated] or [Dead]. The target removes the [Incapacitated] or [Dead] condition, and recovers 5 HP. This enemy then takes 10 direct damage."
+      }
+    },
+    "loot": {
+      "1": {
+        "item": "Short Bow",
+        "table": "weapons",
+        "gold": null,
+        "quantity": 1
+      },
+      "2~6": {
+        "item": "Golden Cheese",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
+    }
+  },
   "Ratman Stringer": {},
   "Ratman Swarm Caller": {},
   "Red Cap": {
@@ -1215,6 +1441,14 @@
         "range": null,
         "limit": "1/Scene",
         "description": "This enemy may make a [Normal Move] up to 2 Sq. If the enemy ends its movement in the same square as a [Natural] Prop, it gains a +2 bonus to [Dodge Checks]. Treat this effect as a Combat Status that is removed after applying once."
+      }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Rusted Hatchet",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },
@@ -1496,6 +1730,14 @@
         "limit": "1/Scene",
         "description": "This enemy gains a +10 bonus to the damage roll of a [Melee Attack]."
       }
+    },
+    "loot": {
+      "Fixed": {
+        "item": "Smashed Necklace",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      }
     }
   },
   "Skeleton Archer": {
@@ -1546,6 +1788,20 @@
         "range": null,
         "limit": "1/Scene",
         "description": "This enemy gains a +10 bonus to the damage roll of a [Ranged Attack]."
+      }
+    },
+    "loot": {
+      "1~3": {
+        "item": "Glittering Bone",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
+      },
+      "4~6": {
+        "item": "Dull White Bone Dust",
+        "table": "items",
+        "gold": null,
+        "quantity": 1
       }
     }
   },

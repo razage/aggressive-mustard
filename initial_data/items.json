@@ -599,6 +599,16 @@
     "price": 20,
     "description": null
   },
+  "Golden Cheese": {
+    "rank": 1,
+    "tags": ["Valuable"],
+    "timing": null,
+    "target": null,
+    "range": null,
+    "check": null,
+    "price": 30,
+    "description": null
+  },
   "Golden Wheat": {
     "rank": 1,
     "tags": ["Magic Catalyst 1"],
