@@ -5,3 +5,4 @@
 *.json eol=lf
 *.py eol=lf
 *.scss eol=lf
+*.hbs eol=lf
